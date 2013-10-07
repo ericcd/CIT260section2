@@ -26,10 +26,25 @@ public class Escapeee {
         Escapeee myGame = new Escapeee();    
         Player player1 = new Player();
         player1.setName("jacob");
-        player1.displayName();
-        myGame.getName();
-        myGame.displayHelp();
+        player1.displayPlayerName();
+        //myGame.getName();
+        //myGame.displayHelp();
         player1.displayScore();
+        
+        Door door1 = new Door();
+        door1.displayDoorNumber();
+        
+        Room room1 = new Room();
+        room1.whatIsHere();
+        
+        Obstacle obst1 = new Obstacle();
+        obst1.displayObstacleName();
+        
+        Container cont1 = new Container();
+        cont1.displayContainerName();
+        
+        Item item1 = new Item();
+        item1.displayItemName();
     }
     public void getName(){
         Scanner input = new Scanner(System.in);

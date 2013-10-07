@@ -16,7 +16,7 @@ public class Player {
         this.name = theName;
     }
     
-    public void displayName(){
+    public void displayPlayerName(){
         System.out.println("My name is " + this.name);
     }
     

@@ -9,7 +9,7 @@ package escapeee;
  * @author Eric
  */
 public class Room {
-    String Description;
+    String Description = "You are in a dark room and can barley see.";
     //Direction? Can't remember what that was for.
     
     public void whatIsHere(){

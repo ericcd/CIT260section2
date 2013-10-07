@@ -9,10 +9,10 @@ package escapeee;
  * @author zachhollingshead
  */
 public class Obstacle {
-    String ObstacleName;
+    String ObstacleName = "Locked Door";
     
     
-    public void displayName(){
+    public void displayObstacleName(){
        System.out.println("Look out for the " + this.ObstacleName);
     }
     

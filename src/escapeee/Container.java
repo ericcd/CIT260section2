@@ -9,10 +9,10 @@ package escapeee;
  * @author zachhollingshead
  */
 public class Container {
-    String nameAppliedToContainer;
+    String nameAppliedToContainer = "Night Stand";
     boolean locked = false;
  
-    public void displayName(){
+    public void displayContainerName(){
      System.out.println("You have located the " + this.nameAppliedToContainer);   
 
     }

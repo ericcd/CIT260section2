@@ -9,10 +9,10 @@ package escapeee;
  * @author zachhollingshead
  */
 public class Item {
-    String ItemName;
+    String ItemName = "Wrench";
     boolean pickedup = false;
     
-    public void displayName(){
+    public void displayItemName(){
        System.out.println("You have discovered the " + this.ItemName);
     }
     

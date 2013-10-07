@@ -9,11 +9,11 @@ package escapeee;
  * @author Eric
  */
 public class Door {
-    int DoorNumber;
+    int DoorNumber = 1102;
     boolean doorLocked = true;
     
-    public void displayNumber(){
-        System.out.println(this.DoorNumber);
+    public void displayDoorNumber(){
+        System.out.println("The door number is " + this.DoorNumber);
     }
     
 }
