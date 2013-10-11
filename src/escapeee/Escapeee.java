@@ -45,6 +45,12 @@ public class Escapeee {
         
         Item item1 = new Item();
         item1.displayItemName();
+        
+        
+        player1.getTime();
+     
+        
+        
     }
     public void getName(){
         Scanner input = new Scanner(System.in);
@@ -55,4 +61,7 @@ public class Escapeee {
         System.out.println("\nWelcome " + this.name + " to Escape!" );
         System.out.println(this.instructions);
     }
+    
+   
+    
 }
