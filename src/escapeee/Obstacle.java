@@ -11,11 +11,9 @@ package escapeee;
 public class Obstacle {
     String ObstacleName = "Locked Door";
     
-    
     public void displayObstacleName(){
        System.out.println("Look out for the " + this.ObstacleName);
     }
-    
     
 }   
 
