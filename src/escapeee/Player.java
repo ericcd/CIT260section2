@@ -24,22 +24,25 @@ public class Player {
         System.out.println("Your score is " + this.highscore);
     }
     
-    public void getTime(){//long startTime, long endTime){
-        long startTime = 10;
+    public long getTime(long startTime, long endTime){
+        //long startTime = 10;
         
-        long endTime = 5;
+        //long endTime = 5;
         
         if (startTime > endTime){
             System.out.println("TIME ERROR");
+            return -1;
         }
             
         long theTime = endTime - startTime;
         if (theTime < 0){
-            System.out.println("TIME ERROR: NEGATIVE VALUE");
+            System.out.println("NEGATIVE VALUE");
+            return -1;
         }
         long timeToBeat = theTime * 1;
         
-        System.out.println("You beat the game in " + theTime + "\nThe time to beat is " + timeToBeat );
+        System.out.println("You beat the game in " + theTime + "\nThe time to beat is " + timeToBeat);
+        return timeToBeat;
     
     }
 }
