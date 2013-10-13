@@ -58,13 +58,13 @@ public class Player {
     
     public float getWinPercent( float gamesStarted, float gamesFinished){
 	if (gamesStarted < 1 || gamesFinished < 0){
-	System.out.println("Invalid win percentage");
+	System.out.println("INVALID WIN PERCENT");
 	return -1;
         }
        
         
 	float getWinPercent = gamesFinished / gamesStarted;
-	float trueWinPercent = getWinPercent * 1;
+	float trueWinPercent = getWinPercent * 100;
 	 
         
         System.out.println("Your winning percentage is " + trueWinPercent);
