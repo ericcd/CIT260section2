@@ -64,7 +64,7 @@ public class Player {
         
 	float getWinPercent = gamesFinished / gamesStarted;
 	Float trueWinPercent = getWinPercent * 1;
-	return trueWinPercent;
+	return trueWinPercent;  
 }
 
 }
