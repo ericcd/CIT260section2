@@ -91,22 +91,36 @@ public class PlayerTest {
     }
 
     /**
-     * Test of getAgeInMonths method, of class Player.
-     /
+     * Test of getAgeInMonths method, of class Player. By Eric Dennis
+     */
     @Test
     public void testGetAgeInMonths() {
         System.out.println("getAgeInMonths");
-        int ageInYears = 0;
+        int ageInYears = 17;
         Player instance = new Player();
-        float expResult = 0.0F;
+        float expResult = 221.0F;
         float result = instance.getAgeInMonths(ageInYears);
-        assertEquals(expResult, result, 0.0);
+        assertEquals(expResult, result, 221.0);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
+        
+        System.out.println("getAgeInMonths");
+        ageInYears = -1;
+        //Player instance = new Player();
+        expResult = -1;
+        result = instance.getAgeInMonths(ageInYears);
+        assertEquals(expResult, result, -1);
+        
+        System.out.println("getAgeInMonths");
+        ageInYears = 1001;
+        //Player instance = new Player();
+        expResult = -1;
+        result = instance.getAgeInMonths(ageInYears);
+        assertEquals(expResult, result, -1);
     }
 
     /**
-     * Test of getWinPercent method, of class Player.
+     * Test of getWinPercent method, of class Player. Done By Zach Hollingshead
      */
     @Test
     //test 1
