@@ -45,4 +45,15 @@ public class Player {
         return timeToBeat;
     
     }
+    
+    public float getAgeInMonths(int ageInYears){
+        if(ageInYears < 0 || ageInYears > 1000){
+            System.out.println("Invalid Age - Too Old or Too Young");
+            return -1;
+        }
+        
+        float ageInWeeks = ageInYears / 52;
+        float ageInMonths = ageInWeeks * 4;
+        return ageInMonths; 
+    }
 }
