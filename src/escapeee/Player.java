@@ -56,19 +56,20 @@ public class Player {
         return ageInMonths; 
     }
     
-    public float getWinPercent( int gamesStarted, int gamesFinished){
+    public float getWinPercent( float gamesStarted, float gamesFinished){
 	if (gamesStarted < 1 || gamesFinished < 0){
 	System.out.println("Invalid win percentage");
 	return -1;
-	}
+        }
+       
         
 	float getWinPercent = gamesFinished / gamesStarted;
 	float trueWinPercent = getWinPercent * 1;
-	return trueWinPercent;  
+	 
+        
+        System.out.println("Your winning percentage is " + trueWinPercent);
+        return trueWinPercent;
 }
 
-    long getWinPercent(long gamesStarted, long gamesFinished) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
 
 }
