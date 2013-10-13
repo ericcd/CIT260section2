@@ -56,4 +56,16 @@ public class Player {
         float ageInMonths = ageInWeeks * 4;
         return ageInMonths; 
     }
+    
+    public float getWinPercent( int gamesStarted, int gamesFinished){
+	if (gamesStarted < 1 || gamesFinished < 0){
+	System.out.println("Invalid win percentage");
+	return -1;
+	}
+        
+	float getWinPercent = gamesFinished / gamesStarted;
+	Float trueWinPercent = getWinPercent * 1;
+	return trueWinPercent;
+}
+
 }
