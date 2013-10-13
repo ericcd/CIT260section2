@@ -63,8 +63,12 @@ public class Player {
 	}
         
 	float getWinPercent = gamesFinished / gamesStarted;
-	Float trueWinPercent = getWinPercent * 1;
+	float trueWinPercent = getWinPercent * 1;
 	return trueWinPercent;  
 }
+
+    long getWinPercent(long gamesStarted, long gamesFinished) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 
 }
