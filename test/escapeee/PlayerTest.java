@@ -115,9 +115,9 @@ public class PlayerTest {
         float gamesStarted = 4;
         float gamesFinished = 1;
         Player instance = new Player();
-        float expResult = 0.25F;
+        float expResult = 25.0F;
         float result = instance.getWinPercent(gamesStarted, gamesFinished);
-        assertEquals(expResult, result, 0.25);
+        assertEquals(expResult, result, 25.0);
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
         
