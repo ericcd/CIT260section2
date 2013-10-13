@@ -13,7 +13,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author Eric
+ * @author zachhollingshead
  */
 public class PlayerTest {
     
@@ -38,8 +38,9 @@ public class PlayerTest {
 
     /**
      * Test of setName method, of class Player.
-     */
-    /*@Test
+     /
+    
+    @Test
     public void testSetName() {
         System.out.println("setName");
         String theName = "";
@@ -50,8 +51,8 @@ public class PlayerTest {
     }
 
     /**
-     * Test of displayPlayerName method, of class Player.
-     
+      Test of displayPlayerName method, of class Player.
+     /
     @Test
     public void testDisplayPlayerName() {
         System.out.println("displayPlayerName");
@@ -63,7 +64,7 @@ public class PlayerTest {
 
     /**
      * Test of displayScore method, of class Player.
-     
+     /
     @Test
     public void testDisplayScore() {
         System.out.println("displayScore");
@@ -75,129 +76,97 @@ public class PlayerTest {
 
     /**
      * Test of getTime method, of class Player.
-     */
-    //@Test
+     /
+    @Test
     public void testGetTime() {
-        //test1
-        System.out.println("getTime test 1");
-        
-        long startTime= 0;
-        long endTime = 50;
+        System.out.println("getTime");
+        long startTime = 0L;
+        long endTime = 0L;
         Player instance = new Player();
-        long expResult = 50;
+        long expResult = 0L;
         long result = instance.getTime(startTime, endTime);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
-        
-        //test2
-        System.out.println("getTime test 2");
-        
-        startTime = 0L;
-        endTime = -5L;
-        expResult = -1L;
-        result = instance.getTime(startTime, endTime);
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
-        
-        //test3
-        System.out.println("getTime test 3");
-        
-        startTime= 0;
-        endTime = 1;
-        expResult = 1;
-        result = instance.getTime(startTime, endTime);
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
-        
-        //test4
-        System.out.println("getTime test 4");
-        
-        startTime= 0;
-        endTime = 0;
-        expResult = 0;
-        result = instance.getTime(startTime, endTime);
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
-        
-        //test5
-        System.out.println("getTime test 5");
-        
-        startTime= 12;
-        endTime = 5;
-        expResult = -1;
-        result = instance.getTime(startTime, endTime);
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
+        fail("The test case is a prototype.");
     }
-    
-    public void testgetWinPercent(){
-    //test1
-        System.out.println("getWinPercent test 1");
-        
-        long gamesStarted= 4;
-        long gamesFinished = 1;
-        Player instance = new Player();
-        long expResult = 25;
-        long result = instance.getWinPercent(gamesStarted, gamesFinished);
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
-        
-        //test2
-        System.out.println("getWinPercent test 2");
-        
-        gamesStarted = -3;
-        gamesFinished = 0;
-        expResult = -1;
-        result = instance.getWinPercent(gamesStarted, gamesFinished);
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
-        
-        //test3
-        System.out.println("getWinPercent test 3");
-        
-        gamesStarted = -18;
-        gamesFinished = -5;
-        expResult = -1;
-        result = instance.getWinPercent(gamesStarted, gamesFinished);
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
-        
-       //test4
-        System.out.println("getWinPercent test 4");
-        
-        gamesStarted = 44;
-        gamesFinished = -5;
-        expResult = -1;
-        result = instance.getWinPercent(gamesStarted, gamesFinished);
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
-        
-       //test5
-        System.out.println("getWinPercent test 5");
-        
-        gamesStarted = 99;
-        gamesFinished = -99;
-        expResult = -1;
-        result = instance.getWinPercent(gamesStarted, gamesFinished);
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
-    
-    }
-    
 
-    private void assertEquals(long expResult, long result) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    /**
+     * Test of getAgeInMonths method, of class Player.
+     /
+    @Test
+    public void testGetAgeInMonths() {
+        System.out.println("getAgeInMonths");
+        int ageInYears = 0;
+        Player instance = new Player();
+        float expResult = 0.0F;
+        float result = instance.getAgeInMonths(ageInYears);
+        assertEquals(expResult, result, 0.0);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
+
+    /**
+     * Test of getWinPercent method, of class Player.
+     */
+    @Test
+    //test 1
+    public void testGetWinPercent() {
+        System.out.println("getWinPercent test 1");
+        float gamesStarted = 4;
+        float gamesFinished = 1;
+        Player instance = new Player();
+        float expResult = 0.25F;
+        float result = instance.getWinPercent(gamesStarted, gamesFinished);
+        assertEquals(expResult, result, 0.25);
+        // TODO review the generated test code and remove the default call to fail.
+        //fail("The test case is a prototype.");
+        
+        //test 2
+        
+        System.out.println("getWinPercent test 2");
+        gamesStarted = -89;
+        gamesFinished = 0;
+        //Player instance = new Player();
+        expResult = -1;
+        result = instance.getWinPercent(gamesStarted, gamesFinished);
+        assertEquals(expResult, result, -1);
+        // TODO review the generated test code and remove the default call to fail.
+        //fail("The test case is a prototype.");
+        
+        //test 3
+        System.out.println("getWinPercent test 3");
+        gamesStarted = -1;
+        gamesFinished = -12;
+        //Player instance = new Player();
+        expResult = -1F;
+        result = instance.getWinPercent(gamesStarted, gamesFinished);
+        assertEquals(expResult, result, -1);
+        // TODO review the generated test code and remove the default call to fail.
+        //fail("The test case is a prototype.");
+        
+        //test 4
+        System.out.println("getWinPercent test 4");
+        gamesStarted = -1909090;
+        gamesFinished = -00;
+        //Player instance = new Player();
+        expResult = -1F;
+        result = instance.getWinPercent(gamesStarted, gamesFinished);
+        assertEquals(expResult, result, -1);
+        // TODO review the generated test code and remove the default call to fail.
+        //fail("The test case is a prototype.");
+        
+        //test 5
+        System.out.println("getWinPercent test 5");
+        gamesStarted = -12;
+        gamesFinished = -1;
+        //Player instance = new Player();
+        expResult = -1F;
+        result = instance.getWinPercent(gamesStarted, gamesFinished);
+        assertEquals(expResult, result, -1);
+        // TODO review the generated test code and remove the default call to fail.
+        //fail("The test case is a prototype.");
+        
     
     
+    }
 }
