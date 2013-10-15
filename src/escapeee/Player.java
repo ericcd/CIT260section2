@@ -29,6 +29,12 @@ public class Player {
         
         //long endTime = 5;
         
+        /* 
+         * rkj - Needed two primitive variables -1
+         *       No explicit type conversion -1
+         *       Unit test not working -1
+         */
+        
         if (startTime > endTime){
             System.out.println("TIME ERROR");
             return -1;
