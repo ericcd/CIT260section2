@@ -12,7 +12,7 @@ import java.util.Scanner;
  */
 public class Escapeee {
 
-    //Instance vairales
+    //Instance vairables
     String name;
     String instructions = "You objective is to escape in one piece.\n"
             + "You will be trapped inside a dark gloomy house but you are not alone.\n"
@@ -52,6 +52,9 @@ public class Escapeee {
      */
         HelpMenuView helpmenu = new HelpMenuView();
         helpmenu.displayHelpMenu();
+        
+        MainMenuView mainmenu = new MainMenuView();
+        mainmenu.displayMainMenu();
         
     }
     public void getName(){
