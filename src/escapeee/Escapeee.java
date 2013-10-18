@@ -23,7 +23,7 @@ public class Escapeee {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Escapeee myGame = new Escapeee();    
+        /*Escapeee myGame = new Escapeee();    
         Player player1 = new Player();
         player1.setName("jacob");
         player1.displayPlayerName();
@@ -49,8 +49,9 @@ public class Escapeee {
         long startTime = 0;
         long endTime = 5;
         player1.getTime(startTime, endTime);
-     
-        
+     */
+        HelpMenuView helpmenu = new HelpMenuView();
+        helpmenu.displayHelpMenu();
         
     }
     public void getName(){
