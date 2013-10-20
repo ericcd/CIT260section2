@@ -4,6 +4,8 @@
  */
 package escapeee;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Zach
@@ -43,6 +45,6 @@ public class MainMenuView {
                     MainMenuControl.quitGame();
                     break;
             }
-        }while (!"s".equals(this.command));
+        }while (!"s".equals(this.command) || !"q".equals(this.command));
     }
 }
