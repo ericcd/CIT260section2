@@ -4,6 +4,8 @@
  */
 package escapeee;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Eric
@@ -75,7 +77,46 @@ public class Player {
         
         System.out.println("Your winning percentage is " + trueWinPercent);
         return trueWinPercent;
-}
+    }
+    
+    public void getCommandInput(){
+        String answer = null;
+        boolean valid = false;
+        while(!valid){
+            System.out.println("\n\t" + "Scubba"
+                    + ", what are you going to do?\n");
+            Scanner response = new Scanner(System.in);
+            answer = response.nextLine();
+            
+            if (answer == null  || answer.length() < 1) {
+                continue;
+            }
+            
+            
+        }
+    }
+    
+    public int useItemsInventory(){
+        String answer = null;
+        boolean itemValid = false;
+        while(!itemValid){
+            Item list = new Item();
+            list.itemList();
+            
+            System.out.println("What item Would you like to use? (Enter a number)\n"
+                    + "Enter 0 to exit. \n");
+            
+            Scanner response = new Scanner(System.in);
+            answer = response.nextLine();
+            
+            if (answer == null  || answer.length() < 1) {
+                continue;
+            }
+            return 0;
+        }
+        return 0;
+    } 
+    
 
 
 }

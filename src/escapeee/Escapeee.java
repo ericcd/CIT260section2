@@ -49,15 +49,17 @@ public class Escapeee {
         long startTime = 0;
         long endTime = 5;
         player1.getTime(startTime, endTime);
-     */
+     
         HelpMenuView helpmenu = new HelpMenuView();
         helpmenu.displayHelpMenu();
         
         MainMenuView mainmenu = new MainMenuView();
         mainmenu.displayMainMenu();
-        
+        */
+        Obstacle duh = new Obstacle();
+        duh.riddleOne();
     }
-    public void getName(){
+    /*public void getName(){
         Scanner input = new Scanner(System.in);
         System.out.println("Enter your name here: ");
         this.name = input.next();   
@@ -66,7 +68,7 @@ public class Escapeee {
         System.out.println("\nWelcome " + this.name + " to Escape!" );
         System.out.println(this.instructions);
     }
-    
+    */
    
     
 }

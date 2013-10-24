@@ -4,6 +4,8 @@
  */
 package escapeee;
 
+import java.util.Scanner;
+
 /**
  *
  * @author zachhollingshead
@@ -15,5 +17,42 @@ public class Obstacle {
        System.out.println("Look out for the " + this.ObstacleName);
     }
     
+     public String riddleOne() {
+        String answer = null;
+                
+        boolean valid = false; // flag to indicate if valid character entered
+        while (!valid) {
+            // prompt for input
+            System.out.println("\n\t Solve this riddle to leave the room: \n" 
+                    + "What is two plus two, multiplied by two, equals...? ");
+            
+            // get input from user
+            Scanner input = new Scanner(System.in);
+            answer = input.nextLine();
+           
+            // no marker entered?
+            if (answer == null  || answer.length() < 1) {
+                continue;
+            }
+                       
+            if (answer.equals("Q")) { // Quit?
+                return null;
+            }
+            
+            // Check to see if the marker is already in use
+            if (!"6".equals(answer)) {
+               System.out.println("\"You Shall Not Pass!!!\"");
+               continue;
+            }
+            else {
+                System.out.println("That Is correct.");
+            }
+            
+            valid = true; // signal that a valid marker was entered
+        }
+        
+        return answer;
+    }
+     
 }   
 
