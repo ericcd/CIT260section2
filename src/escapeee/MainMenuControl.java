@@ -23,4 +23,10 @@ public class MainMenuControl {
     public void quitGame(){
         
     }
+
+    private static class Game {
+
+        public Game() {
+        }
+    }
 }

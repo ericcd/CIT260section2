@@ -15,4 +15,15 @@ public class Room {
     public void whatIsHere(){
         System.out.println(this.Description);
     }
+    
+    
+    
+    public void whereAmI(){
+         int[] numbers = 
+             {1,2,3,4,5,6,7,8,9,10};
+         for (int item : numbers) {
+             System.out.println("Room: " + item);
+         }
+    }
+
 }

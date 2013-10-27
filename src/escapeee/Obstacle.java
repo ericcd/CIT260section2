@@ -45,7 +45,7 @@ public class Obstacle {
                continue;
             }
             else {
-                System.out.println("That Is correct.");
+                System.out.println("That Is correct. Select a new room.");
             }
             
             valid = true; // signal that a valid marker was entered
