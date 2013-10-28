@@ -44,10 +44,6 @@ public class Obstacle {
                System.out.println("\"You Shall Not Pass!!!\"");
                continue;
             }
-            else {
-                System.out.println("That Is correct. Select a new room.");
-            }
-
             
             System.out.println("That Is correct.");         
             valid = true; // signal that a valid marker was entered
