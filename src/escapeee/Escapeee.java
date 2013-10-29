@@ -55,13 +55,16 @@ public class Escapeee {
         
         MainMenuView mainmenu = new MainMenuView();
         mainmenu.displayMainMenu();
-        */
+        
         Obstacle duh = new Obstacle();
         duh.riddleOne();
         
         
         Room bug = new Room();
         bug.whereAmI();
+        */
+        Item blast = new Item();
+        blast.forLoop();
     }
     /*public void getName(){
         Scanner input = new Scanner(System.in);
