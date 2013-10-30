@@ -4,6 +4,8 @@
  */
 package escapeee;
 
+import java.util.Scanner;
+
 /**
  *
  * @author zachhollingshead
@@ -18,6 +20,7 @@ public class Item {
         {"3", "Dollar Bill"},
         {"4", "Tooth Pick"}
     };
+    private int i;
     
     public void displayItemName(){
        System.out.println("You have discovered the " + this.ItemName);
@@ -29,5 +32,43 @@ public class Item {
             }   
     }
     
+    public void forLoop(){
+        System.out.println("What Item do you want to use?");
+        for (int count = 1; count <= 10; count++) {
+            this.helpForLoop(count);
+        }
+    }
     
+    public void helpForLoop(int count){
+        if (count == 1){
+            System.out.println(count + ". Wrench");
+        }
+        else if (count == 2){
+            System.out.println(count + ". Crowbar");
+        }
+        else if (count == 3){
+            System.out.println(count + ". Lightbulb");
+        }
+        else if (count == 4){
+            System.out.println(count + ". Tissue");
+        }
+        else if (count == 5){
+            System.out.println(count + ". Baseball Bat");
+        }
+        else if (count == 6){
+            System.out.println(count + ". Candy");
+        }
+        else if (count == 7){
+            System.out.println(count + ". Shoe");
+        }
+        else if (count == 8){
+            System.out.println(count + ". Toothbrush");
+        }
+        else if (count == 9){
+            System.out.println(count + ". Pencil");
+        }
+        else{
+            System.out.println(count + ". Soda");
+        }
+    }
 }

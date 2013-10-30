@@ -62,6 +62,9 @@ public class Escapeee {
         
         Room bug = new Room();
         bug.whereAmI();
+        */
+        Item blast = new Item();
+        blast.forLoop();
     }
     /*public void getName(){
         Scanner input = new Scanner(System.in);
