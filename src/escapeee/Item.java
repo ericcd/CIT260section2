@@ -54,13 +54,13 @@ public class Item {
         //copies
         int count = 10;
         String[] subs = new String[count];
-        for (int i = 1; i < count; i++) {
+        for (int i = 0; i < count; i++) {
             subs[i] = this.itemNamesArray[i];          
         }
         
         //sorts list here
         subs = this.sortList(subs);
-        
+        System.out.println("\n\n\nThis is the list sorted Alphabetically from asending order.\n");
         //display
         for (int x = 0; x < count; x++){
             System.out.println(subs[x]);
@@ -109,8 +109,7 @@ public class Item {
             
             notDone = false; // assume that you done
             for (int sub = 0; sub < names.length - 1; sub++) {
-                int compareResult = names[sub].compareTo(names[sub+1]);
-                if (compareResult > 0) {
+                if (names[sub].compareToIgnoreCase(names[sub + 1]) > 0) {
                     // swap names
                     tmpName = names[sub];
                     names[sub] = names[sub+1];
