@@ -38,7 +38,7 @@ public class Item {
     
     
     
-    public String[] itemNamesArray = new String[11];
+    public String[] itemNamesArray = new String[10];
     
     
     public void forLoop(){
@@ -48,7 +48,7 @@ public class Item {
             String array;
             array = this.helpForLoop(count);
             this.itemNamesArray[count] = array;
-            System.out.println(this.itemNamesArray[count]);          
+            System.out.println(this.itemNamesArray[count]);
         }
         
         //copies
@@ -65,7 +65,6 @@ public class Item {
         for (int x = 0; x < count; x++){
             System.out.println(subs[x]);
         }
-        
     }
     
     public String helpForLoop(int count){
@@ -109,7 +108,7 @@ public class Item {
         while(notDone) {
             
             notDone = false; // assume that you done
-            for (int sub = 0; sub < names.length; sub++) {
+            for (int sub = 0; sub < names.length - 1; sub++) {
                 int compareResult = names[sub].compareTo(names[sub+1]);
                 if (compareResult > 0) {
                     // swap names
