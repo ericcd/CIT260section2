@@ -32,43 +32,94 @@ public class Item {
             }   
     }
     
+    
+    
+    
+    
+    
+    
+    public String[] itemNamesArray = new String[10];
+    
+    
     public void forLoop(){
+        //shows list, puts list in array
         System.out.println("What Item do you want to use?");
-        for (int count = 1; count <= 10; count++) {
-            this.helpForLoop(count);
+        for (int count = 0; count <= 9; count++) {
+            String array;
+            array = this.helpForLoop(count);
+            this.itemNamesArray[count] = array;
+            System.out.println(this.itemNamesArray[count]);
+        }
+        
+        //copies
+        int count = 10;
+        String[] subs = new String[count];
+        for (int i = 1; i < count; i++) {
+            subs[i] = this.itemNamesArray[i];          
+        }
+        
+        //sorts list here
+        subs = this.sortList(subs);
+        
+        //display
+        for (int x = 0; x < count; x++){
+            System.out.println(subs[x]);
         }
     }
     
-    public void helpForLoop(int count){
-        if (count == 1){
-            System.out.println(count + ". Wrench");
+    public String helpForLoop(int count){
+        String out = null;
+        if (count == 0){
+            out = "Wrench";                   
+        }
+        else if (count == 1){
+            out = "Crowbar";
         }
         else if (count == 2){
-            System.out.println(count + ". Crowbar");
+            out = "Lightbulb";
         }
         else if (count == 3){
-            System.out.println(count + ". Lightbulb");
+            out = "Tissue";
         }
         else if (count == 4){
-            System.out.println(count + ". Tissue");
+            out = "Baseball Bat";
         }
         else if (count == 5){
-            System.out.println(count + ". Baseball Bat");
+            out = "Candy";
         }
         else if (count == 6){
-            System.out.println(count + ". Candy");
+            out = "Shoe";
         }
         else if (count == 7){
-            System.out.println(count + ". Shoe");
+            out = "Toothbrush";
         }
         else if (count == 8){
-            System.out.println(count + ". Toothbrush");
-        }
-        else if (count == 9){
-            System.out.println(count + ". Pencil");
+            out = "Pencil";
         }
         else{
-            System.out.println(count + ". Soda");
+            out = "Soda";
         }
+        return out;
+    }
+    
+    public String[] sortList(String[] names) {
+        String tmpName;
+        boolean notDone = true;
+        while(notDone) {
+            
+            notDone = false; // assume that you done
+            for (int sub = 0; sub < names.length - 1; sub++) {
+                int compareResult = names[sub].compareTo(names[sub+1]);
+                if (compareResult > 0) {
+                    // swap names
+                    tmpName = names[sub];
+                    names[sub] = names[sub+1];
+                    names[sub+1] = tmpName;
+                    notDone = true;
+                } 
+            }
+        }
+
+        return names;
     }
 }
