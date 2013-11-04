@@ -51,6 +51,15 @@ public class Obstacle {
         
         return answer;
     }
-     
+    
+     public void findTheAverage(){
+         int[] number = {1,2,3,4,5,6};
+         int crusher = 0;
+         for (int count = 0; count < 6; count++){
+             crusher += number[count];    
+         }
+         crusher /= 7;
+         System.out.println(crusher);
+     }
 }   
 
