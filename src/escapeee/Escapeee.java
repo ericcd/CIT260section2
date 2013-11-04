@@ -23,7 +23,7 @@ public class Escapeee {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-       Escapeee myGame = new Escapeee();    
+      /*  Escapeee myGame = new Escapeee();    
         Player player1 = new Player();
         player1.setName("jacob");
         player1.displayPlayerName();
@@ -62,9 +62,16 @@ public class Escapeee {
         
         Room bug = new Room();
         bug.whereAmI();
-        */
+        
         Item blast = new Item();
         blast.forLoop();
+        */
+        
+        //Obstacle dew = new Obstacle();
+        //dew.findTheAverage();
+        
+        Item coke = new Item();
+        coke.showTheNumbers();
     }
     /*public void getName(){
         Scanner input = new Scanner(System.in);
