@@ -120,5 +120,15 @@ public class Item {
         }
 
         return names;
+   }
+    public void showTheNumbers(){
+    int [] numbers = {10,20,25};
+    int average = 0;
+    for (int count = 0; count <3; count++ ){
+        average+= numbers[count];
+             
+         }
+    System.out.println(average);
+            
     }
-}
+  }
