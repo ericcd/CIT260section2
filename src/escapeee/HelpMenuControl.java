@@ -10,14 +10,14 @@ package escapeee;
  */
 public class HelpMenuControl {
     
-    public void commandList(){
-        System.out.println("\npickup -itemname- : This will put the item in your inventory.\n"
-                + "move -forward/back/left/right- : This will move you in that direction.\n"
-                + "use -item in inventory- -obstacle- : This will use an item you have on the ostacle.\n");
+    public void itemsList(){
+        Item list = new Item();
+        list.itemList1();    
     }
     
     public void quitGame(){
-        Escapeee newgame = new Escapeee();
+        MainMenuView main = new MainMenuView();
+        main.displayMainMenu();
     }
     
     public void gameCredits(){
@@ -26,7 +26,8 @@ public class HelpMenuControl {
                 + "The majestic Zach Hollingshead");
     }
 
-    public void continueGame(){
+    /*public void continueGame(){
         System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n");
     }
+    */
 }

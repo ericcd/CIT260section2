@@ -14,11 +14,7 @@ public class Escapeee {
 
     //Instance vairables
     String name;
-    String instructions = "You objective is to escape in one piece.\n"
-            + "You will be trapped inside a dark gloomy house but you are not alone.\n"
-            + "You will be traveling from room to room, using only the things you find\n"
-            + "within the house.\n"
-            + "Good luck and don't get lost!";
+ 
     /**
      * @param args the command line arguments
      */
@@ -65,11 +61,18 @@ public class Escapeee {
         
         Item blast = new Item();
         blast.forLoop();
+        
+        Obstacle dew = news Obstacle();
+        dew.findTheAverage();
         */
         
-        Obstacle dew = new Obstacle();
-        dew.findTheAverage();
+        MainMenuView duts = new MainMenuView();
+        duts.esc();
+        duts.displayMainMenu();
+        
+        
     }
+    
     /*public void getName(){
         Scanner input = new Scanner(System.in);
         System.out.println("Enter your name here: ");

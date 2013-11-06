@@ -35,10 +35,17 @@ public class Obstacle {
                 continue;
             }
                        
-            if (answer.equals("Q")) { // Quit?
+            if (answer.equals("q")) { // Quit?
+                MainMenuView main = new MainMenuView();
                 return null;
             }
             
+            if (answer.equals("h")){
+                HelpMenuView help = new HelpMenuView();
+                help.displayHelpMenu();
+            }
+            
+        
             // Check to see if the marker is already in use
             if (!"6".equals(answer)) {
                System.out.println("\"You Shall Not Pass!!!\"");

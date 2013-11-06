@@ -41,7 +41,7 @@ public class Item {
     public String[] itemNamesArray = new String[10];
     
     
-    public void forLoop(){
+    public void itemList1(){
         //shows list, puts list in array
         System.out.println("What Item do you want to use?");
         for (int count = 0; count <= 9; count++) {

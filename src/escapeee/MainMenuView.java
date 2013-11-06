@@ -22,6 +22,22 @@ public class MainMenuView {
         
     };
     
+    public void esc(){
+        System.out.println("eeeeeeeeeeeeee\n"
+                +          "eeeeeeeeeeeeee\n"
+                +          "eeeee\n"
+                +          "eeeee\n"
+                +          "eeeeeeeee\n"
+                +          "eeeeeeeee          sssssssss     cccccccccc     aaaaaaaaa     ppppppppp     eeeeeeee\n"
+                +          "eeeee              sss           ccc            aa     aa     pp     pp     ee    ee\n"
+                +          "eeeee              sssssssss     ccc            aaaaaaaaa     pp     pp     eeeeeeee\n"
+                +          "eeeeeeeeeeeeee           sss     ccc            aa     aa     pp     pp     ee\n"
+                +          "eeeeeeeeeeeeee     sssssssss     cccccccccc     aa     aa     ppppppppp     eeeeeeee\n"
+                +          "                                                              pp\n"
+                +          "                                                              pp\n"
+                +          "                                                              pp");
+    }
+    
     public final void displayMainMenu() {
         do{
             System.out.println("\n\t===============================================================");
@@ -42,9 +58,11 @@ public class MainMenuView {
                     MainMenuControl.commandList();
                     break;
                 case "q":
-                    MainMenuControl.quitGame();
+                    System.out.println("Thanks for Playing!");
                     break;
             }
-        }while (!"s".equals(this.command) || !"q".equals(this.command));
+        }
+        //while (!"s".equals(this.command) || !"q".equals(this.command));
+        while (command.equals("c"));
     }
 }
