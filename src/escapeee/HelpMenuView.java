@@ -18,7 +18,7 @@ public class HelpMenuView {
     
     private final static String[][] menuItems = {
         {"i", "Item List"},
-        {"q", "Quit to main menu"},
+        {"-", "-"},
         {"g", "Game Credits"},
         {"u", "Continue"}
     };
@@ -82,15 +82,15 @@ public class HelpMenuView {
                 case "i":
                     helpMenuControl.itemsList();
                     break;
-                case "q":
-                    helpMenuControl.quitGame();
+                case "-":
+                    //helpMenuControl.quitGame();
                     break;
                 case "g":
                     helpMenuControl.gameCredits();
                     break;
                 case "u":
                     //helpMenuControl.continueGame();
-                    System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n");
+                    System.out.println("\n\n\n\n\n\n\n\n\n\n");
                     break;
             }
         }while (!"u".equals(this.command) && !"q".equals(this.command));

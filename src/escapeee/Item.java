@@ -48,9 +48,9 @@ public class Item {
             String array;
             array = this.helpForLoop(count);
             this.itemNamesArray[count] = array;
-            System.out.println(this.itemNamesArray[count]);
+            System.out.println((count + 1) + ". " + this.itemNamesArray[count]);
         }
-        
+        /*
         //copies
         int count = 10;
         String[] subs = new String[count];
@@ -64,7 +64,7 @@ public class Item {
         //display
         for (int x = 0; x < count; x++){
             System.out.println(subs[x]);
-        }
+        }*/
     }
     
     public String helpForLoop(int count){
@@ -79,25 +79,25 @@ public class Item {
             out = "Lightbulb";
         }
         else if (count == 3){
-            out = "Tissue";
+            out = "Wood Plank";
         }
         else if (count == 4){
             out = "Baseball Bat";
         }
         else if (count == 5){
-            out = "Candy";
+            out = "Paper clip";
         }
         else if (count == 6){
-            out = "Shoe";
+            out = "Battery";
         }
         else if (count == 7){
-            out = "Toothbrush";
+            out = "Chainsaw";
         }
         else if (count == 8){
             out = "Pencil";
         }
         else{
-            out = "Soda";
+            out = "Lighter";
         }
         return out;
     }

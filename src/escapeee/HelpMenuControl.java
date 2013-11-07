@@ -15,10 +15,10 @@ public class HelpMenuControl {
         list.itemList1();    
     }
     
-    public void quitGame(){
+    /*public void quitGame(){
         MainMenuView main = new MainMenuView();
         main.displayMainMenu();
-    }
+    }*/
     
     public void gameCredits(){
         System.out.println("This game was created by:\n"

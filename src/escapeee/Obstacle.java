@@ -18,7 +18,7 @@ public class Obstacle {
     }
     
     public void nextStep(){
-        System.out.println("\nYou have completed the previous task. The door creaks open into a dark hallway.\n"
+        System.out.println("\nYou have completed the previous task. The door creaks open into a dark and spooky hallway.\n"
                 + "You find yourself in another room, with another challenge.");
     }
     
