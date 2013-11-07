@@ -39,21 +39,23 @@ public class Obstacle {
             if (answer == null  || answer.length() < 1) {
                 continue;
             }
-                       
-            if (answer.equals("q")) { // Quit?
+            
+            // Quit?
+            if (answer.equals("q")) {
                 MainMenuView main = new MainMenuView();
                 main.displayMainMenu();
                 return null;
             }
             
+            //Help Menu?
             if (answer.equals("h")){
                 HelpMenuView help = new HelpMenuView();
                 help.displayHelpMenu();
             }
             
         
-            // Check to see if the marker is already in use
-            if (!"6".equals(answer)) {
+            // Check to see if the answer is correct
+            if (!"6".equals(answer) || !"h".equals(answer)) {
                System.out.println("\"You Shall Not Pass!!!\"");
                continue;
             }
