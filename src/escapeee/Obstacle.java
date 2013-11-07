@@ -28,7 +28,8 @@ public class Obstacle {
         boolean valid = false; // flag to indicate if valid character entered
         while (!valid) {
             // prompt for input
-            System.out.println("\n\t Solve this riddle to leave the room: \n" 
+            System.out.println("\n\t You have woken up to find a note, written on the note is \n"
+                    + " Solve this riddle to leave the room: \n" 
                     + "What is two plus two, multiplied by two, equals...? ");
             
             // get input from user
