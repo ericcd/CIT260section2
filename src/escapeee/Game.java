@@ -12,11 +12,11 @@ public class Game {
     String instructions;
 
     public Game() {
-        this.instructions = "You objective is to escape in one piece.\n"
-              + "You will be trapped inside a dark gloomy house but you are not alone.\n"
-              + "You will be traveling from room to room, using only the things you find\n"
-              + "within the house.\n"
-              + "Good luck and don't get lost!\n"
+        this.instructions = "\nYou wake up to only find nothing but darkness.\n"
+              + "Millions of questions are running through your mind,\n"
+              + "the only thing you know is that you shouldn't be there.\n"
+              + "All you have with you is a backpack full of items.\n"
+              + "It's time to ESCAPE! \n"
               + "**Type h for help**\n"
               + "**Type q to quit to the menu**\n";
     }
