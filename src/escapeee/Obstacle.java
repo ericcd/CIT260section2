@@ -17,6 +17,11 @@ public class Obstacle {
        System.out.println("Look out for the " + this.ObstacleName);
     }
     
+    public void nextStep(){
+        System.out.println("\nYou have completed the previous task. The door creaks open into a dark hallway.\n"
+                + "You find yourself in another room, with another challenge.");
+    }
+    
      public String riddleOne() {
         String answer = null;
                 
@@ -37,6 +42,7 @@ public class Obstacle {
                        
             if (answer.equals("q")) { // Quit?
                 MainMenuView main = new MainMenuView();
+                main.displayMainMenu();
                 return null;
             }
             
