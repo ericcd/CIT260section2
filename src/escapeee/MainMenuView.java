@@ -17,7 +17,7 @@ public class MainMenuView {
     
     private final static String[][] menuItems = {
         {"s", "Start"},
-        {"c", "Command List"},
+        {"e", "Explain Game"},
         {"q", "Quit"}
         
     };
@@ -54,8 +54,8 @@ public class MainMenuView {
                 case "s":
                     MainMenuControl.startGame();
                     break;
-                case "c":
-                    MainMenuControl.commandList();
+                case "e":
+                    MainMenuControl.explainGame();
                     break;
                 case "q":
                     System.out.println("Thanks for Playing!");
@@ -63,6 +63,6 @@ public class MainMenuView {
             }
         }
         //while (!"s".equals(this.command) || !"q".equals(this.command));
-        while (command.equals("c"));
+        while (command.equals("e"));
     }
 }

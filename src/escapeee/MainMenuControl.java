@@ -16,9 +16,9 @@ public class MainMenuControl {
         game.theGame();
     }
     
-    public void commandList(){
-         System.out.println("\npickup -itemname- : This will put the item in your inventory.\n"
-                + "move -forward/back/left/right- : This will move you in that direction.\n"
-                + "use -item in inventory- -obstacle- : This will use an item you have on the ostacle.\n");
+    public void explainGame(){
+         System.out.println("\nThe goal is to escape from a house that you find yourself in. You have items to help you escape.\n"
+                 + "Enter in the correct answers to move from room to room, but be careful, there is no turning back.\n"
+                 + "There will be math problems and problems where you have to use your items.");
     }
 }

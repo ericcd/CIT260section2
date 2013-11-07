@@ -17,7 +17,8 @@ public class Game {
               + "You will be traveling from room to room, using only the things you find\n"
               + "within the house.\n"
               + "Good luck and don't get lost!\n"
-              + "**Type h for help**";
+              + "**Type h for help**\n"
+              + "**Type q to quit to the menu**\n";
     }
     
     public void newGame(){
