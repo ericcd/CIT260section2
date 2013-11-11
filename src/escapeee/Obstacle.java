@@ -67,6 +67,98 @@ public class Obstacle {
         
         return answer;
     }
+     
+     public String riddleTwo() {
+        String answer = null;
+                
+        boolean valid = false; // flag to indicate if valid character entered
+        while (!valid) {
+            // prompt for input
+            System.out.println("\n\t You have entered another room to find that it is pitch black. \n"
+                    + " You need to see in order to navigate through the room. \n" 
+                    + "You hear hissing...is the room full of snakes? \n"
+                    + "How will you get around this?! Possibly using an item?"
+                    );
+            
+            // get input from user
+            Scanner input = new Scanner(System.in);
+            answer = input.nextLine();
+           
+            // no marker entered?
+            if (answer == null  || answer.length() < 1) {
+                continue;
+            }
+                       
+            if (answer.equals("q")) { // Quit?
+                MainMenuView main = new MainMenuView();
+                main.displayMainMenu();
+                return null;
+            }
+            
+            if (answer.equals("h")){
+                HelpMenuView help = new HelpMenuView();
+                help.displayHelpMenu();
+            }
+            
+        
+            // Check to see if the marker is already in use
+            if (!"2".equals(answer)) {
+               System.out.println("\"That item won't work, we need light in order to see!\"");
+               continue;
+            }
+            
+            System.out.println("Finally we can see, kill all the snakes!");         
+            valid = true; // signal that a valid marker was entered
+        }
+        
+        return answer;
+    }
+     
+  public String riddleThree() {
+        String answer = null;
+                
+        boolean valid = false; // flag to indicate if valid character entered
+        while (!valid) {
+            // prompt for input
+            System.out.println("\n\t You have entered another room to find that it is pitch black. \n"
+                    + " You need to see in order to navigate through the room. \n" 
+                    + "You hear hissing...is the room full of snakes? \n"
+                    + "How will you get around this?! Possibly using an item?"
+                    );
+            
+            // get input from user
+            Scanner input = new Scanner(System.in);
+            answer = input.nextLine();
+           
+            // no marker entered?
+            if (answer == null  || answer.length() < 1) {
+                continue;
+            }
+                       
+            if (answer.equals("q")) { // Quit?
+                MainMenuView main = new MainMenuView();
+                main.displayMainMenu();
+                return null;
+            }
+            
+            if (answer.equals("h")){
+                HelpMenuView help = new HelpMenuView();
+                help.displayHelpMenu();
+            }
+            
+        
+            // Check to see if the marker is already in use
+            if (!"2".equals(answer)) {
+               System.out.println("\"That item won't work, we need light in order to see!\"");
+               continue;
+            }
+            
+            System.out.println("Finally we can see, kill all the snakes!");         
+            valid = true; // signal that a valid marker was entered
+        }
+        
+        return answer;
+    }
     
      public void findTheAverage(){
          int[] number = {1,2,3,4,5,6};
