@@ -30,4 +30,13 @@ public class Game {
         challenge.riddleOne();
     }
     
+    public void theGame_1(){
+        Obstacle challenge = new Obstacle();
+        challenge.riddleTwo();
+    }
+    
+    public void theGame_2(){
+        Obstacle challenge = new Obstacle();
+        challenge.riddleThree();
+    }
 }
