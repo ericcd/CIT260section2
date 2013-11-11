@@ -16,7 +16,8 @@ public class Escapeee {
     String name;
  
     /**
-     * @param args the command line arguments
+     * @param args the commands
+     * line arguments
      */
     public static void main(String[] args) {
       /*  Escapeee myGame = new Escapeee();    

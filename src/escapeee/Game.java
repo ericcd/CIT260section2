@@ -25,17 +25,17 @@ public class Game {
         System.out.println(instructions);
     }
     
-    public void theGame(){
+    public void theGame_1(){
         Obstacle challenge = new Obstacle();
         challenge.riddleOne();
     }
     
-    public void theGame_1(){
+    public void theGame_2(){
         Obstacle challenge = new Obstacle();
         challenge.riddleTwo();
     }
     
-    public void theGame_2(){
+    public void theGame_3(){
         Obstacle challenge = new Obstacle();
         challenge.riddleThree();
     }

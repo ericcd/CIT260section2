@@ -56,7 +56,7 @@ public class Obstacle {
             
         
             // Check to see if the answer is correct
-            if (!"6".equals(answer) || !"h".equals(answer)) {
+            if (!answer.equals("6")) {
                System.out.println("\"You Shall Not Pass!!!\"");
                continue;
             }
@@ -102,7 +102,7 @@ public class Obstacle {
             
         
             // Check to see if the marker is already in use
-            if (!"2".equals(answer)) {
+            if (!"3".equals(answer)) {
                System.out.println("\"That item won't work, we need light in order to see!\"");
                continue;
             }
