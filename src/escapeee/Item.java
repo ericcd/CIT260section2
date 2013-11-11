@@ -44,6 +44,8 @@ public class Item {
     public void itemList1(){
         //shows list, puts list in array
         System.out.println("What Item do you want to use?");
+        System.out.println("To use an item, press U and then the number associated"
+                + "with the item you would like to use");
         for (int count = 0; count <= 9; count++) {
             String array;
             array = this.helpForLoop(count);

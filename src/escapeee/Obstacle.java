@@ -28,7 +28,7 @@ public class Obstacle {
         boolean valid = false; // flag to indicate if valid character entered
         while (!valid) {
             // prompt for input
-            System.out.println("\n\t You have woken up to find a note, written on the note is \n"
+            System.out.println("\n You have woken up to find a note, written on the note is \n"
                     + " Solve this riddle to leave the room: \n" 
                     + "What is two plus two, multiplied by two, equals...? ");
             
@@ -61,7 +61,7 @@ public class Obstacle {
                continue;
             }
             
-            System.out.println("That Is correct.");         
+            System.out.println("That is correct.");         
             valid = true; // signal that a valid marker was entered
         }
         
@@ -74,10 +74,10 @@ public class Obstacle {
         boolean valid = false; // flag to indicate if valid character entered
         while (!valid) {
             // prompt for input
-            System.out.println("\n\t You have entered another room to find that it is pitch black. \n"
+            System.out.println("\n You have entered another room to find that it is pitch black. \n"
                     + " You need to see in order to navigate through the room. \n" 
                     + "You hear hissing...is the room full of snakes? \n"
-                    + "How will you get around this?! Possibly using an item?"
+                    + "How will you get around this?! Possibly using an item? Maybe that sparking lamp might be useful..."
                     );
             
             // get input from user
@@ -120,10 +120,11 @@ public class Obstacle {
         boolean valid = false; // flag to indicate if valid character entered
         while (!valid) {
             // prompt for input
-            System.out.println("\n\t You have entered another room to find that it is pitch black. \n"
-                    + " You need to see in order to navigate through the room. \n" 
-                    + "You hear hissing...is the room full of snakes? \n"
-                    + "How will you get around this?! Possibly using an item?"
+            System.out.println("\n You have entered another room to find that it smells of gasoline. \n"
+                    + "There might be a message written with the gas \n" 
+                    + "should we ignite it? \n"
+                    + "How will you ignite the message?"
+                    + "**Type h for help**"
                     );
             
             // get input from user
@@ -148,12 +149,12 @@ public class Obstacle {
             
         
             // Check to see if the marker is already in use
-            if (!"2".equals(answer)) {
+            if (!"10".equals(answer)) {
                System.out.println("\"That item won't work, we need light in order to see!\"");
                continue;
             }
             
-            System.out.println("Finally we can see, kill all the snakes!");         
+            System.out.println("The message reads, TRY TO GET OUT ALIVE!");         
             valid = true; // signal that a valid marker was entered
         }
         
