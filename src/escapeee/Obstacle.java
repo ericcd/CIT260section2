@@ -28,7 +28,7 @@ public class Obstacle {
         boolean valid = false; // flag to indicate if valid character entered
         while (!valid) {
             // prompt for input
-            System.out.println("\nYou have woken up to find a note, written on the note is \n"
+            System.out.println("\n\t You have woken up to find a note, written on the note is \n"
                     + " Solve this riddle to leave the room: \n" 
                     + "What is two plus two, multiplied by two, equals...? ");
             
@@ -74,7 +74,7 @@ public class Obstacle {
         boolean valid = false; // flag to indicate if valid character entered
         while (!valid) {
             // prompt for input
-            System.out.println("\nYou have entered another room to find that it is pitch black. \n"
+            System.out.println("\n\t You have entered another room to find that it is pitch black. \n"
                     + " You need to see in order to navigate through the room. \n" 
                     + "You hear hissing...is the room full of snakes? \n"
                     + "How will you get around this?! Possibly using an item?"
@@ -100,6 +100,7 @@ public class Obstacle {
                 help.displayHelpMenu();
             }
             
+        
             // Check to see if the marker is already in use
             if (!"3".equals(answer)) {
                System.out.println("\"That item won't work, we need light in order to see!\"");
@@ -119,7 +120,7 @@ public class Obstacle {
         boolean valid = false; // flag to indicate if valid character entered
         while (!valid) {
             // prompt for input
-            System.out.println("\nYou have entered another room to find that it is pitch black. \n"
+            System.out.println("\n\t You have entered another room to find that it is pitch black. \n"
                     + " You need to see in order to navigate through the room. \n" 
                     + "You hear hissing...is the room full of snakes? \n"
                     + "How will you get around this?! Possibly using an item?"
