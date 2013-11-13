@@ -123,7 +123,7 @@ public class Obstacle {
                continue;
             }
             
-            System.out.println("\nFinally we can see, kill all the snakes!");         
+            System.out.println("\nThe lightbulb worked! Finally we can see! Kill all the snakes!");         
             valid = true; // signal that a valid marker was entered
         }
         
@@ -136,11 +136,12 @@ public class Obstacle {
         boolean valid = false; // flag to indicate if valid character entered
         while (!valid) {
             // prompt for input
-            System.out.println("\n You have entered another room to find that it smells of gasoline. \n"
-                    +          "There might be a message written with the gas \n" 
-                    +          "should we ignite it? \n"
-                    +          "How will you ignite the message?"
-                    +          "**Type h for help**"
+            System.out.println("\n\t?????????????????? Obstacle 2 ???????????????????????\n"
+                    +          "\tYou have entered another room to find that it smells of gasoline. \n"
+                    +          "\tThere might be a message written with the gas \n" 
+                    +          "\tshould we ignite it? \n"
+                    +          "\tHow will you ignite the message?\n"
+                    +          "\t?????????????????????????????????????????????????????"
                     );
             
             // get input from user
@@ -158,18 +159,19 @@ public class Obstacle {
                 return null;
             }
             
+            // help menu
             if (answer.equals("h")){
                 HelpMenuView help = new HelpMenuView();
                 help.displayHelpMenu();
             }
             
-            // Displays message when done with menu
+            // Displays message when done with help menu
             if (answer.equals("h") || answer.equals("u") || answer.equals("q") || answer.equals("i")) {
                 System.out.println("Back to figuring out your problem...");
                 continue;
             }
             
-            // Check to see if the amrker is already in use
+            // Check to see if the answer is correct
             if (!"10".equals(answer)) {
                System.out.println("\"That item won't work, we need light in order to see!\"");
                continue;
