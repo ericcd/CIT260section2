@@ -24,7 +24,7 @@ public class HelpMenuControl {
         System.out.println("This game was created by:\n"
                 + "Eric Dennis\n"
                 + "The majestic Zach Hollingshead"
-                + "Oh and Kris Reed");
+                + "Oh and Kris Reed the Canadian...eh?");
     }
 
     /*public void continueGame(){

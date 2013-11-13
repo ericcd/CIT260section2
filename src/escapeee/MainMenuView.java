@@ -62,7 +62,6 @@ public class MainMenuView {
                     break;
             }
         }
-        //while (!"s".equals(this.command) || !"q".equals(this.command));
-        while (command.equals("e"));
+        while (!"s".equals(this.command) && !"q".equals(this.command));
     }
 }
