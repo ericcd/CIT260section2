@@ -177,7 +177,7 @@ public class Obstacle {
                continue;
             }
             
-            System.out.println("The message reads, TRY TO GET OUT ALIVE!");         
+            System.out.println("The message reads is just a number, 4");         
             valid = true; // signal that a valid marker was entered
         }
         
