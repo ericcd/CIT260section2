@@ -44,15 +44,14 @@ public class Item {
     public void itemList1(){
         //shows list, puts list in array
         System.out.println("What Item do you want to use?");
-        System.out.println("To use an item, press U and then the number associated"
-                + "with the item you would like to use");
+        System.out.println("To use an item, enter the number next to it when you are back to the problem.");
         for (int count = 0; count <= 9; count++) {
             String array;
             array = this.helpForLoop(count);
             this.itemNamesArray[count] = array;
             System.out.println((count + 1) + ". " + this.itemNamesArray[count]);
         }
-        
+        /*
         //copies
         int count = 10;
         String[] subs = new String[count];
@@ -66,7 +65,7 @@ public class Item {
         //display
         for (int x = 0; x < count; x++){
             System.out.println(subs[x]);
-        }
+        }*/
     }
     
     public String helpForLoop(int count){

@@ -61,7 +61,6 @@ public class Escapeee {
         
         Item blast = new Item();
         blast.forLoop();
-        
         Obstacle dew = news Obstacle();
         dew.findTheAverage();
         */

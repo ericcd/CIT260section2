@@ -24,19 +24,18 @@ public class Obstacle {
     
      public String riddleOne() {
         String answer = null;
-                
         boolean valid = false; // flag to indicate if valid character entered
         while (!valid) {
             // prompt for input
             System.out.println("\nYou have woken up to find a note, written on the note is: \n"
                     + "\tSolve this riddle to leave the room: \n" 
-                    + "\tWhat is two plus two, multiplied by two? A trick question...");
+                    + "\tWhat is two plus two multiplied by two? A trick question...");
             
             // get input from user
             Scanner input = new Scanner(System.in);
             answer = input.nextLine();
            
-            // no marker entered?
+            // no text entered?
             if (answer == null  || answer.length() < 1) {
                 continue;
             }
@@ -54,14 +53,19 @@ public class Obstacle {
                 help.displayHelpMenu();
             }
             
-        
+            // Displays message when done with menu
+            if (answer.equals("h") || answer.equals("u") || answer.equals("q") || answer.equals("i")) {
+                System.out.println("Back to figuring out your problem...");
+                continue;
+            }
+                
             // Check to see if the answer is correct
             if (!answer.equals("6")) {
                System.out.println("\"You Shall Not Pass!!!\"");
                continue;
             }
             
-            System.out.println("That is correct.\n");         
+            System.out.println("\nThat is correct.\n");         
             valid = true; // signal that a valid marker was entered
         }
         
@@ -74,40 +78,47 @@ public class Obstacle {
         boolean valid = false; // flag to indicate if valid character entered
         while (!valid) {
             // prompt for input
-            System.out.println("\n You have entered another room to find that it is pitch black. \n"
-                    + " You need to see in order to navigate through the room. \n" 
+            System.out.println("\nYou have entered another room to find that it is pitch black.\n"
+                    + "The lightswitch is not working...odd.\n"
+                    + "You need to see in order to navigate through the room.\n" 
                     + "You hear hissing...is the room full of snakes? \n"
-                    + "How will you get around this?! Possibly using an item? Maybe that sparking lamp might be useful..."
-                    );
+                    + "\tHow will you get around this?! Possibly using an item? Maybe that sparking lightbulb socket might be useful...\n");
             
             // get input from user
             Scanner input = new Scanner(System.in);
             answer = input.nextLine();
            
-            // no marker entered?
+            // no text entered?
             if (answer == null  || answer.length() < 1) {
                 continue;
             }
-                       
-            if (answer.equals("q")) { // Quit?
+            
+            // Quit?
+            if (answer.equals("q")) {
                 MainMenuView main = new MainMenuView();
                 main.displayMainMenu();
                 return null;
             }
             
+            // Use the help menu
             if (answer.equals("h")){
                 HelpMenuView help = new HelpMenuView();
                 help.displayHelpMenu();
             }
             
-        
-            // Check to see if the marker is already in use
-            if (!"3".equals(answer)) {
+            // Displays message when done with menu
+            if (answer.equals("h") || answer.equals("u") || answer.equals("q") || answer.equals("i")) {
+                System.out.println("Back to figuring out your problem...");
+                continue;
+            }
+            
+            // Check to see if the answer is correct
+            if (!answer.equals("3")) {
                System.out.println("\"That item won't work, we need light in order to see!\"");
                continue;
             }
             
-            System.out.println("Finally we can see, kill all the snakes!");         
+            System.out.println("\nFinally we can see, kill all the snakes!");         
             valid = true; // signal that a valid marker was entered
         }
         
@@ -147,8 +158,13 @@ public class Obstacle {
                 help.displayHelpMenu();
             }
             
-        
-            // Check to see if the marker is already in use
+            // Displays message when done with menu
+            if (answer.equals("h") || answer.equals("u") || answer.equals("q") || answer.equals("i")) {
+                System.out.println("Back to figuring out your problem...");
+                continue;
+            }
+            
+            // Check to see if the amrker is already in use
             if (!"10".equals(answer)) {
                System.out.println("\"That item won't work, we need light in order to see!\"");
                continue;

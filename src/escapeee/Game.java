@@ -17,10 +17,11 @@ public class Game {
               + "the only thing you know is that you shouldn't be here.\n"
               + "All you have with you is a backpack full of random items.\n"
               + "It's time to ESCAPE! \n"
-              + "\n\t============HINT==============\n"
-              + "\t**Type h for help**\n"
-              + "\t**Type q to quit to the main menu**\n"
-              + "\t==============================\n";
+              + "\n\t================HINT=================\n"
+              + "\t  **Type h for the help menu**\n"
+              + "\t      -You can see your items from the here\n"
+              + "\t  **Type q to quit to the main menu**\n"
+              + "\t=====================================\n";
     }
     
     public void newGame(){
