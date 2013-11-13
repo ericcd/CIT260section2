@@ -23,7 +23,8 @@ public class HelpMenuControl {
     public void gameCredits(){
         System.out.println("This game was created by:\n"
                 + "Eric Dennis\n"
-                + "The majestic Zach Hollingshead");
+                + "The majestic Zach Hollingshead"
+                + "Oh and Kris Reed");
     }
 
     /*public void continueGame(){
