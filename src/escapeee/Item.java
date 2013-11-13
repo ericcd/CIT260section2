@@ -52,7 +52,7 @@ public class Item {
             this.itemNamesArray[count] = array;
             System.out.println((count + 1) + ". " + this.itemNamesArray[count]);
         }
-        /*
+        
         //copies
         int count = 10;
         String[] subs = new String[count];
@@ -66,7 +66,7 @@ public class Item {
         //display
         for (int x = 0; x < count; x++){
             System.out.println(subs[x]);
-        }*/
+        }
     }
     
     public String helpForLoop(int count){
@@ -98,6 +98,7 @@ public class Item {
         else if (count == 8){
             out = "Pencil";
         }
+        //anything 9 and above
         else{
             out = "Lighter";
         }

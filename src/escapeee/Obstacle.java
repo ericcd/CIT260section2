@@ -28,9 +28,9 @@ public class Obstacle {
         boolean valid = false; // flag to indicate if valid character entered
         while (!valid) {
             // prompt for input
-            System.out.println("\n You have woken up to find a note, written on the note is \n"
-                    + " Solve this riddle to leave the room: \n" 
-                    + "What is two plus two, multiplied by two, equals...? ");
+            System.out.println("\nYou have woken up to find a note, written on the note is: \n"
+                    + "\tSolve this riddle to leave the room: \n" 
+                    + "\tWhat is two plus two, multiplied by two? A trick question...");
             
             // get input from user
             Scanner input = new Scanner(System.in);
@@ -61,7 +61,7 @@ public class Obstacle {
                continue;
             }
             
-            System.out.println("That is correct.");         
+            System.out.println("That is correct.\n");         
             valid = true; // signal that a valid marker was entered
         }
         
@@ -160,7 +160,99 @@ public class Obstacle {
         
         return answer;
     }
+  
+      public String riddleFour() {
+        String answer = null;
+                
+        boolean valid = false; // flag to indicate if valid character entered
+        while (!valid) {
+            // prompt for input
+            System.out.println("\nYou have woken up to find a note, written on the note is: \n"
+                    + "\tSolve this riddle to leave the room: \n" 
+                    + "\tWhat is two plus two, multiplied by two? A trick question...");
+            
+            // get input from user
+            Scanner input = new Scanner(System.in);
+            answer = input.nextLine();
+           
+            // no marker entered?
+            if (answer == null  || answer.length() < 1) {
+                continue;
+            }
+            
+            // Quit?
+            if (answer.equals("q")) {
+                MainMenuView main = new MainMenuView();
+                main.displayMainMenu();
+                return null;
+            }
+            
+            //Help Menu?
+            if (answer.equals("h")){
+                HelpMenuView help = new HelpMenuView();
+                help.displayHelpMenu();
+            }
+            
+        
+            // Check to see if the answer is correct
+            if (!answer.equals("6")) {
+               System.out.println("\"You Shall Not Pass!!!\"");
+               continue;
+            }
+            
+            System.out.println("That is correct.\n");         
+            valid = true; // signal that a valid marker was entered
+        }
+        
+        return answer;
+    }
     
+            public String riddleFourPartTwo() {
+        String answer = null;
+                
+        boolean valid = false; // flag to indicate if valid character entered
+        while (!valid) {
+            // prompt for input
+            System.out.println("\n You have woken up to find a note, written on the note is \n"
+                    + " Solve this riddle to leave the room: \n" 
+                    + "What is two plus two, multiplied by two, equals...? ");
+            
+            // get input from user
+            Scanner input = new Scanner(System.in);
+            answer = input.nextLine();
+           
+            // no marker entered?
+            if (answer == null  || answer.length() < 1) {
+                continue;
+            }
+            
+            // Quit?
+            if (answer.equals("q")) {
+                MainMenuView main = new MainMenuView();
+                main.displayMainMenu();
+                return null;
+            }
+            
+            //Help Menu?
+            if (answer.equals("h")){
+                HelpMenuView help = new HelpMenuView();
+                help.displayHelpMenu();
+            }
+            
+        
+            // Check to see if the answer is correct
+            if (!answer.equals("6")) {
+               System.out.println("\"You Shall Not Pass!!!\"");
+               continue;
+            }
+            
+            System.out.println("That is correct.\n");         
+            valid = true; // signal that a valid marker was entered
+        }
+        
+        return answer;
+    }
+            
      public void findTheAverage(){
          int[] number = {1,2,3,4,5,6};
          int crusher = 0;

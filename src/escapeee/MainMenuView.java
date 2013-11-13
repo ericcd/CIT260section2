@@ -58,7 +58,7 @@ public class MainMenuView {
                     MainMenuControl.explainGame();
                     break;
                 case "q":
-                    System.out.println("Thanks for Playing!");
+                    System.out.println("\nThanks for Playing!");
                     break;
             }
         }

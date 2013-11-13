@@ -14,11 +14,13 @@ public class Game {
     public Game() {
         this.instructions = "\nYou wake up to only find nothing but darkness.\n"
               + "Millions of questions are running through your mind,\n"
-              + "the only thing you know is that you shouldn't be there.\n"
-              + "All you have with you is a backpack full of items.\n"
+              + "the only thing you know is that you shouldn't be here.\n"
+              + "All you have with you is a backpack full of random items.\n"
               + "It's time to ESCAPE! \n"
-              + "**Type h for help**\n"
-              + "**Type q to quit to the menu**\n";
+              + "\n\t============HINT==============\n"
+              + "\t**Type h for help**\n"
+              + "\t**Type q to quit to the main menu**\n"
+              + "\t==============================\n";
     }
     
     public void newGame(){

@@ -42,7 +42,6 @@ public class Escapeee {
         
         Item item1 = new Item();
         item1.displayItemName();
-        
         long startTime = 0;
         long endTime = 5;
         player1.getTime(startTime, endTime);

@@ -14,8 +14,8 @@ public class MainMenuControl {
         Game game = new Game();
         game.newGame();
         game.theGame_1();
-        game.theGame_2();
-        game.theGame_3();
+        //game.theGame_2();
+        //game.theGame_3();
     }
     
     public void explainGame(){
