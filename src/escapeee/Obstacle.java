@@ -29,7 +29,7 @@ public class Obstacle {
             // prompt for input
             System.out.println("????????????????????????????????????????????????????"
                     +"\n? You have woken up to find a note, written on the note is: ?\n"
-                    + "? Solve this riddle to leave the room:                       ?\n\n"  
+                    + "? Solve this riddle to leave the room:                       ?\n"  
                     + "? What is two plus two multiplied by two? A trick question...?"
                     + "??????????????????????????????????????????????????????????????");
             
@@ -83,7 +83,7 @@ public class Obstacle {
             System.out.println("\nYou have entered another room to find that it is pitch black.\n"
                     + "The lightswitch is not working...odd.\n"
                     + "You need to see in order to navigate through the room.\n" 
-                    + "You hear hissing...is the room full of snakes?\n\n"
+                    + "You hear hissing...is the room full of snakes? \n"
                     + "\tHow will you get around this?! Possibly using an item? Maybe that sparking lightbulb socket might be useful...\n");
             
             // get input from user
@@ -135,8 +135,9 @@ public class Obstacle {
             // prompt for input
             System.out.println("\n You have entered another room to find that it smells of gasoline. \n"
                     + "There might be a message written with the gas \n" 
-                    + "should we ignite it?\n\n"
-                    + "\tHow will you ignite the message?"
+                    + "should we ignite it? \n"
+                    + "How will you ignite the message?"
+                    + "**Type h for help**"
                     );
             
             // get input from user
