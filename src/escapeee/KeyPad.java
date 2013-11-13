@@ -84,7 +84,7 @@ public class KeyPad {
 +"\n\t\t\t |           -------------   |"
 +"\n\t\t\t  ---------------------------"
                     );
-        if ("31337".equals(keypadin)){
+        if ("36".equals(keypadin)){
            System.out.println("The safe opens and you grab a shotgun and a glock. You make sure to pick up a couple of packs of rounds and put them in your backpack.");
         }
         else{
