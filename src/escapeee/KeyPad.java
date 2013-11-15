@@ -16,7 +16,7 @@ public class KeyPad implements Serializable
     private int i;
     private String keypadin = "";
     private int num;
-    public void keyPadGetIn(){
+    private void keyPadGetIn(){
         for (i=0;i<5;i++){
             System.out.println(
  "\n\t\t\t  ____________________________"
