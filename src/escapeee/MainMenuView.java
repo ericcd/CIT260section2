@@ -4,15 +4,13 @@
  */
 package escapeee;
 
-import java.io.Serializable;
 import java.util.Scanner;
 
 /**
  *
  * @author Zach
  */
-public class MainMenuView implements Serializable
-{
+public class MainMenuView {
     private MainMenuControl MainMenuControl = new MainMenuControl();
     private String command;
     
@@ -22,10 +20,6 @@ public class MainMenuView implements Serializable
         {"q", "Quit"}
         
     };
-
-    MainMenuView() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
     
     public void esc(){
         System.out.println("eeeeeeeeeeeeee\n"
@@ -68,39 +62,5 @@ public class MainMenuView implements Serializable
             }
         }
         while (!"s".equals(this.command) && !"q".equals(this.command));
-    }
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    public MainMenuView(String command) {
-        this.command = command;
-    }
-
-    public MainMenuControl getMainMenuControl() {
-        return MainMenuControl;
-    }
-
-    public void setMainMenuControl(MainMenuControl MainMenuControl) {
-        this.MainMenuControl = MainMenuControl;
-    }
-
-    public String getCommand() {
-        return command;
-    }
-
-    public void setCommand(String command) {
-        this.command = command;
     }
 }
