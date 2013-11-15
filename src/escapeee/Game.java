@@ -42,4 +42,12 @@ public class Game {
         Obstacle challenge = new Obstacle();
         challenge.riddleThree();
     }
+    public void theGame_4(){
+        Obstacle challenge = new Obstacle();
+        challenge.riddleFourPartOne();
+    }
+    public void theGame_45(){
+        Obstacle challenge = new Obstacle();
+        challenge.riddleFourPartTwo();
+    }
 }

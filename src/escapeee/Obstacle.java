@@ -57,13 +57,13 @@ public class Obstacle {
             
             // Displays message when done with menu
             if (answer.equals("h") || answer.equals("u") || answer.equals("q") || answer.equals("i")) {
-                System.out.println("Back to figuring out your problem...");
+                System.out.println("\nBack to figuring out your problem...");
                 continue;
             }
                 
             // Check to see if the answer is correct
             if (!answer.equals("6")) {
-               System.out.println("\"You Shall Not Pass!!!\"");
+               System.out.println("\n\"You Shall Not Pass!!!\"");
                continue;
             }
             
@@ -113,13 +113,13 @@ public class Obstacle {
             
             // Displays message when done with menu
             if (answer.equals("h") || answer.equals("u") || answer.equals("q") || answer.equals("i")) {
-                System.out.println("Back to figuring out your problem...");
+                System.out.println("\nBack to figuring out your problem...");
                 continue;
             }
             
             // Check to see if the answer is correct
             if (!answer.equals("3")) {
-               System.out.println("\"That item won't work, we need light in order to see!\"");
+               System.out.println("\n\"That item won't work, we need light in order to see!\"");
                continue;
             }
             
@@ -136,7 +136,7 @@ public class Obstacle {
         boolean valid = false; // flag to indicate if valid character entered
         while (!valid) {
             // prompt for input
-            System.out.println("\n\t?????????????????? Obstacle 2 ???????????????????????\n"
+            System.out.println("\n\t?????????????????? Obstacle 3 ???????????????????????\n"
                     +          "\tYou have entered another room to find that it smells of gasoline. \n"
                     +          "\tThere might be a message written with the gas \n" 
                     +          "\tshould we ignite it? \n"
@@ -167,17 +167,135 @@ public class Obstacle {
             
             // Displays message when done with help menu
             if (answer.equals("h") || answer.equals("u") || answer.equals("q") || answer.equals("i")) {
-                System.out.println("Back to figuring out your problem...");
+                System.out.println("\nBack to figuring out your problem...");
                 continue;
             }
             
             // Check to see if the answer is correct
             if (!"10".equals(answer)) {
-               System.out.println("\"That item won't work, we need light in order to see!\"");
+               System.out.println("\n\"That item won't work, we need light in order to see!\"");
                continue;
             }
             
-            System.out.println("The message reads is just a number, 4");         
+            System.out.println("\nThe message reads is just a number, 4...strange. The door was heat activated, it opens.\n");         
+            valid = true; // signal that a valid marker was entered
+        }
+        
+        return answer;
+    }
+    
+     public String riddleFourPartOne() {
+        String answer = null;
+                
+        boolean valid = false; // flag to indicate if valid character entered
+        while (!valid) {
+            // prompt for input
+            System.out.println("\t?????????????????? Obstacle 4 ???????????????????????\n"
+                    +          "\tAnother room. As you enter the door slams behind you.\n"
+                    +          "\tStrange, you think, the room seems to be getting smaller.\n"
+                    +          "\tIt is! The walls are closing in!!!\n" 
+                    +          "\tYou run to the door to escape, but some one has nailed boards on it to prevent escape!\n"
+                    +          "\tHow will you get around this?! Possibly using an item?\n"
+                    +          "\tHopefully the backpack has another answer for you.\n"
+                    +           "\t?????????????????????????????????????????????????????");
+            
+            // get input from user
+            Scanner input = new Scanner(System.in);
+            answer = input.nextLine();
+           
+            // no text entered?
+            if (answer == null  || answer.length() < 1) {
+                continue;
+            }
+            
+            // Quit?
+            if (answer.equals("q")) {
+                MainMenuView main = new MainMenuView();
+                main.displayMainMenu();
+                return null;
+            }
+            
+            // Use the help menu
+            if (answer.equals("h")){
+                HelpMenuView help = new HelpMenuView();
+                help.displayHelpMenu();
+            }
+            
+            // Displays message when done with menu
+            if (answer.equals("h") || answer.equals("u") || answer.equals("q") || answer.equals("i")) {
+                System.out.println("\nBack to figuring out your problem...");
+                continue;
+            }
+            
+            if (answer.equals("7")) {
+               System.out.println("\n\"This seems a bit excessive...find another item.\"");
+               continue;
+            }
+            
+            // Check to see if the answer is correct
+            if (!answer.equals("1")) {
+               System.out.println("\n\"Not this item, find another!\"");
+               continue;
+            }
+            
+            System.out.println("\n");         
+            valid = true; // signal that a valid marker was entered
+        }
+        
+        return answer;
+    }
+  
+     public String riddleFourPartTwo() {
+        String answer = null;
+                
+        boolean valid = false; // flag to indicate if valid character entered
+        while (!valid) {
+            // prompt for input
+            System.out.println("\t?????????????????? Obstacle 4 ???????????????????????\n"
+                    +          "\tYou got the boards off...only to discover the door is still locked!\n"
+                    +          "\tThose walls are getting close, better hurry!!\n"
+                    +           "\t?????????????????????????????????????????????????????");
+            
+            // get input from user
+            Scanner input = new Scanner(System.in);
+            answer = input.nextLine();
+           
+            // no text entered?
+            if (answer == null  || answer.length() < 1) {
+                continue;
+            }
+            
+            // Quit?
+            if (answer.equals("q")) {
+                MainMenuView main = new MainMenuView();
+                main.displayMainMenu();
+                return null;
+            }
+            
+            // Use the help menu
+            if (answer.equals("h")){
+                HelpMenuView help = new HelpMenuView();
+                help.displayHelpMenu();
+            }
+            
+            // Displays message when done with menu
+            if (answer.equals("h") || answer.equals("u") || answer.equals("q") || answer.equals("i")) {
+                System.out.println("\nBack to figuring out your problem...");
+                continue;
+            }
+            
+            if (answer.equals("7")) {
+               System.out.println("\n\"Stop with the chainsaw, you have a better item for this.\"");
+               continue;
+            }
+            
+            // Check to see if the answer is correct
+            if (!answer.equals("5")) {
+               System.out.println("\n\"Not this item, find another!\"");
+               continue;
+            }
+            
+            System.out.println("\nYou use the paper clip to pick the lock and escape just in time!\n");         
             valid = true; // signal that a valid marker was entered
         }
         

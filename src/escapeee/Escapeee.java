@@ -27,7 +27,6 @@ public class Escapeee {
         //myGame.getName();
         //myGame.displayHelp();
         player1.displayScore();
-        
         Door door1 = new Door();
         door1.displayDoorNumber();
         
