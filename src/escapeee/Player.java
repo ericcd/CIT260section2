@@ -95,28 +95,5 @@ public class Player {
             
         }
     }
-    
-    public int useItemsInventory(){
-        String answer = null;
-        boolean itemValid = false;
-        while(!itemValid){
-            Item list = new Item();
-            list.itemList();
-            
-            System.out.println("What item Would you like to use? (Enter a number)\n"
-                    + "Enter 0 to exit. \n");
-            
-            Scanner response = new Scanner(System.in);
-            answer = response.nextLine();
-            
-            if (answer == null  || answer.length() < 1) {
-                continue;
-            }
-            return 0;
-        }
-        return 0;
-    } 
-    
-
 
 }

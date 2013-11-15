@@ -4,12 +4,15 @@
  */
 package escapeee;
 
+import java.io.Serializable;
+
 /**
  *
  * @author Eric
  */
-public class Game {
-    String instructions;
+public class Game implements Serializable
+{
+    private String instructions;
 
     public Game() {
         this.instructions = "\nYou wake up to only find nothing but darkness.\n"
@@ -50,4 +53,25 @@ public class Game {
         Obstacle challenge = new Obstacle();
         challenge.riddleFourPartTwo();
     }
+
+    
+    
+    
+    
+    
+    
+    
+    public Game(String instructions) {
+        this.instructions = instructions;
+    }
+
+    public String getInstructions() {
+        return instructions;
+    }
+
+    public void setInstructions(String instructions) {
+        this.instructions = instructions;
+    }
+    
+    
 }

@@ -4,41 +4,25 @@
  */
 package escapeee;
 
-import java.util.Scanner;
+import java.io.Serializable;
 
 /**
  *
  * @author zachhollingshead
  */
-public class Item {
-    String ItemName = "Wrench";
-    boolean pickedup = false;
+public class Item implements Serializable
+{
+    private String ItemName = "Wrench";
+    private boolean pickedup = false;
     
-     public final static String[][] listItems = {
+     private final static String[][] listItems = {
         {"1", "Wrench"},
         {"2", "Tire Iron"},
         {"3", "Dollar Bill"},
         {"4", "Tooth Pick"}
     };
-    private int i;
-    
-    public void displayItemName(){
-       System.out.println("You have discovered the " + this.ItemName);
-    }
-    
-    public void itemList(){
-       for (int i = 0; i < Item.listItems.length; i++) {
-                System.out.println("\t   " + listItems[i][0] + "\t" + listItems[i][1]);
-            }   
-    }
-    
-    
-    
-    
-    
-    
-    
-    public String[] itemNamesArray = new String[10];
+  
+    private String[] itemNamesArray = new String[10];
     
     
     public void itemList1(){
@@ -123,14 +107,42 @@ public class Item {
 
         return names;
    }
-    public void showTheNumbers(){
-    int [] numbers = {10,20,25};
-    int average = 0;
-    for (int count = 0; count <3; count++ ){
-        average+= numbers[count];
-             
-         }
-    System.out.println(average);
-            
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    public Item() {
     }
+
+    public String getItemName() {
+        return ItemName;
+    }
+
+    public void setItemName(String ItemName) {
+        this.ItemName = ItemName;
+    }
+
+    public boolean isPickedup() {
+        return pickedup;
+    }
+
+    public void setPickedup(boolean pickedup) {
+        this.pickedup = pickedup;
+    }
+
+    public String[] getItemNamesArray() {
+        return itemNamesArray;
+    }
+
+    public void setItemNamesArray(String[] itemNamesArray) {
+        this.itemNamesArray = itemNamesArray;
+    }
+    
   }

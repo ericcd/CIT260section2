@@ -4,14 +4,16 @@
  */
 package escapeee;
 
+import java.io.Serializable;
 import java.util.Scanner;
 
 /**
  *
  * @author zachhollingshead
  */
-public class Obstacle {
-    String ObstacleName = "Locked Door";
+public class Obstacle implements Serializable
+{
+    private String ObstacleName = "Locked Door";
     
     public void displayObstacleName(){
        System.out.println("Look out for the " + this.ObstacleName);
@@ -301,6 +303,26 @@ public class Obstacle {
         
         return answer;
     }
-  
+
+     
+     
+     
+     
+     
+     
+     
+     
+    public Obstacle() {
+    
+    }
+
+    public String getObstacleName() {
+        return ObstacleName;
+    }
+
+    public void setObstacleName(String ObstacleName) {
+        this.ObstacleName = ObstacleName;
+    }
+    
 }   
 

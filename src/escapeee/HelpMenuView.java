@@ -12,7 +12,6 @@ import java.util.Scanner;
  */
 public class HelpMenuView {
     
-    //private Game game;
     private HelpMenuControl helpMenuControl = new HelpMenuControl();
     private String command;
     

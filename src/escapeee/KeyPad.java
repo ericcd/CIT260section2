@@ -4,16 +4,18 @@
  */
 package escapeee;
 
+import java.io.Serializable;
 import java.util.Scanner;
 
 /**
  *
  * @author K-Reed
  */
-public class KeyPad {
-   int i;
-    String keypadin = "";
-    int num;
+public class KeyPad implements Serializable
+{
+    private int i;
+    private String keypadin = "";
+    private int num;
     public void keyPadGetIn(){
         for (i=0;i<5;i++){
             System.out.println(
@@ -91,5 +93,51 @@ public class KeyPad {
             System.out.println("The keypad beeps angrily. The safe remains locked.");
         }
     }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    public KeyPad(int i, int num) {
+        this.i = i;
+        this.num = num;
+    }
+
+    public int getI() {
+        return i;
+    }
+
+    public void setI(int i) {
+        this.i = i;
+    }
+
+    public String getKeypadin() {
+        return keypadin;
+    }
+
+    public void setKeypadin(String keypadin) {
+        this.keypadin = keypadin;
+    }
+
+    public int getNum() {
+        return num;
+    }
+
+    public void setNum(int num) {
+        this.num = num;
+    }
+    
 }
  
