@@ -11,7 +11,6 @@ import java.util.Scanner;
  * @author Zach
  */
 public class MainMenuView {
-    //private Game game;
     private MainMenuControl MainMenuControl = new MainMenuControl();
     private String command;
     

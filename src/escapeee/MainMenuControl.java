@@ -16,6 +16,8 @@ public class MainMenuControl {
         game.theGame_1();
         game.theGame_2();
         game.theGame_3();
+        game.theGame_4();
+        game.theGame_45();
     }
     
     public void explainGame(){

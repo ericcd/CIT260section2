@@ -4,17 +4,25 @@
  */
 package escapeee;
 
-import java.util.Scanner;
+import java.io.Serializable;
 
 /**
  *
  * @author zachhollingshead
  */
-public class Item {
+public class Item implements Serializable
+{
+    private String ItemName = "Wrench";
+    private boolean pickedup = false;
     
-   
-    
-    public String[] itemNamesArray = new String[10];
+     private final static String[][] listItems = {
+        {"1", "Wrench"},
+        {"2", "Tire Iron"},
+        {"3", "Dollar Bill"},
+        {"4", "Tooth Pick"}
+    };
+  
+    private String[] itemNamesArray = new String[10];
     
     
     public void itemList1(){
@@ -99,5 +107,42 @@ public class Item {
 
         return names;
    }
+
     
-}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    public Item() {
+    }
+
+    public String getItemName() {
+        return ItemName;
+    }
+
+    public void setItemName(String ItemName) {
+        this.ItemName = ItemName;
+    }
+
+    public boolean isPickedup() {
+        return pickedup;
+    }
+
+    public void setPickedup(boolean pickedup) {
+        this.pickedup = pickedup;
+    }
+
+    public String[] getItemNamesArray() {
+        return itemNamesArray;
+    }
+
+    public void setItemNamesArray(String[] itemNamesArray) {
+        this.itemNamesArray = itemNamesArray;
+    }
+    
+  }

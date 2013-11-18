@@ -14,19 +14,19 @@ public class Player {
     String name;
     double highscore = 0;
     
-    public void setName(String theName){
+    private void setName(String theName){
         this.name = theName;
     }
     
-    public void displayPlayerName(){
+    private void displayPlayerName(){
         System.out.println("My name is " + this.name);
     }
     
-    public void displayScore(){
+    private void displayScore(){
         System.out.println("Your score is " + this.highscore);
     }
     
-    public long getTime(long startTime, long endTime){
+    private long getTime(long startTime, long endTime){
         //long startTime = 10;
         
         //long endTime = 5;
@@ -54,7 +54,7 @@ public class Player {
     
     }
     
-    public float getAgeInMonths(int ageInYears){
+    private float getAgeInMonths(int ageInYears){
         if(ageInYears < 0 || ageInYears > 1000){
             System.out.println("Invalid Age - Too Old or Too Young");
             return -1;
@@ -64,7 +64,7 @@ public class Player {
         return ageInMonths; 
     }
     
-    public float getWinPercent( float gamesStarted, float gamesFinished){
+    private float getWinPercent( float gamesStarted, float gamesFinished){
 	if (gamesStarted < 1 || gamesFinished < 0){
 	System.out.println("INVALID WIN PERCENT");
 	return -1;
@@ -79,7 +79,7 @@ public class Player {
         return trueWinPercent;
     }
     
-    public void getCommandInput(){
+    public static void getCommandInput(){
         String answer = null;
         boolean valid = false;
         while(!valid){
@@ -95,8 +95,5 @@ public class Player {
             
         }
     }
- } 
-    
-
 
 
