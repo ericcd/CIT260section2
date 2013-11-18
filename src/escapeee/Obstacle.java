@@ -175,7 +175,7 @@ public class Obstacle implements Serializable
             
             // Check to see if the answer is correct
             if (!"10".equals(answer)) {
-               System.out.println("\n\"That item won't work, we need light in order to see!\"");
+               System.out.println("\n\"That item won't work, we need light in order to see!\"\n");
                continue;
             }
             
@@ -230,13 +230,13 @@ public class Obstacle implements Serializable
             }
             
             if (answer.equals("7")) {
-               System.out.println("\n\"This seems a bit excessive...find another item.\"");
+               System.out.println("\n\"This seems a bit excessive...find another item.\"\n");
                continue;
             }
             
             // Check to see if the answer is correct
             if (!answer.equals("1")) {
-               System.out.println("\n\"Not this item, find another!\"");
+               System.out.println("\n\"Not this item, find another!\"\n");
                continue;
             }
             
@@ -254,7 +254,8 @@ public class Obstacle implements Serializable
         while (!valid) {
             // prompt for input
             System.out.println("\t?????????????????? Obstacle 4 ???????????????????????\n"
-                    +          "\tYou got the boards off...only to discover the door is still locked!\n"
+                    +          "\tYou got the boards off with the crowbar...\n"
+                    +          "\tonly to discover the door is still locked!\n"
                     +          "\tThose walls are getting close, better hurry!!\n"
                     +           "\t?????????????????????????????????????????????????????");
             
@@ -287,13 +288,13 @@ public class Obstacle implements Serializable
             }
             
             if (answer.equals("7")) {
-               System.out.println("\n\"Stop with the chainsaw, you have a better item for this.\"");
+               System.out.println("\n\"Stop with the chainsaw, you have a better item for this.\"\n");
                continue;
             }
             
             // Check to see if the answer is correct
             if (!answer.equals("5")) {
-               System.out.println("\n\"Not this item, find another!\"");
+               System.out.println("\n\"Not this item, find another!\"\n");
                continue;
             }
             
