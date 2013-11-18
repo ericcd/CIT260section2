@@ -88,7 +88,7 @@ public class Item implements Serializable
         return out;
     }
     
-    private String[] sortList(String[] names) {
+    public String[] sortList(String[] names) {
         String tmpName;
         boolean notDone = true;
         while(notDone) {
