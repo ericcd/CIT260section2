@@ -235,7 +235,7 @@ public class Obstacle implements Serializable
             }
             
             // Check to see if the answer is correct
-            if (!answer.equals("1")) {
+            if (!answer.equals("2")) {
                System.out.println("\n\"Not this item, find another!\"\n");
                continue;
             }
