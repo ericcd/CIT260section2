@@ -6,11 +6,13 @@ package escapeee;
 
 import java.util.Scanner;
 
+import java.io.Serializable;
+
 /**
  *
  * @author Zach
  */
-public class MainMenuView {
+public class MainMenuView implements Serializable {
     private MainMenuControl MainMenuControl = new MainMenuControl();
     private String command;
     
@@ -63,4 +65,30 @@ public class MainMenuView {
         }
         while (!"s".equals(this.command) && !"q".equals(this.command));
     }
+
+    public MainMenuView() {
+    }
+
+    public MainMenuControl getMainMenuControl() {
+        return MainMenuControl;
+    }
+
+    public void setMainMenuControl(MainMenuControl MainMenuControl) {
+        this.MainMenuControl = MainMenuControl;
+    }
+
+    public String getCommand() {
+        return command;
+    }
+
+    public void setCommand(String command) {
+        this.command = command;
+    }
+    
+    
+    
+    
+    
+    
+    
 }
