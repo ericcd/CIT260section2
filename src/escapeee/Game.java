@@ -32,25 +32,55 @@ public class Game implements Serializable
     }
     
     public void theGame_1(){
-        Obstacle challenge = new Obstacle();
+        Obstacle challenge = new Obstacle() {
+
+            @Override
+            public String executeObstacles(Game game) {
+                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            }
+        };
         challenge.riddleOne();
     }
     
     public void theGame_2(){
-        Obstacle challenge = new Obstacle();
+        Obstacle challenge = new Obstacle() {
+
+            @Override
+            public String executeObstacles(Game game) {
+                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            }
+        };
         challenge.riddleTwo();
     }
     
     public void theGame_3(){
-        Obstacle challenge = new Obstacle();
+        Obstacle challenge = new Obstacle() {
+
+            @Override
+            public String executeObstacles(Game game) {
+                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            }
+        };
         challenge.riddleThree();
     }
     public void theGame_4(){
-        Obstacle challenge = new Obstacle();
+        Obstacle challenge = new Obstacle() {
+
+            @Override
+            public String executeObstacles(Game game) {
+                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            }
+        };
         challenge.riddleFourPartOne();
     }
     public void theGame_45(){
-        Obstacle challenge = new Obstacle();
+        Obstacle challenge = new Obstacle() {
+
+            @Override
+            public String executeObstacles(Game game) {
+                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            }
+        };
         challenge.riddleFourPartTwo();
     }
 
