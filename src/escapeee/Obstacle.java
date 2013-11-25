@@ -4,6 +4,8 @@
  */
 package escapeee;
 
+import EscapeeeMenuViews.MainMenuView;
+import EscapeeeMenuViews.HelpMenuView;
 import java.io.Serializable;
 import java.util.Scanner;
 
