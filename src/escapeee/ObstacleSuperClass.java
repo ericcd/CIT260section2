@@ -6,27 +6,14 @@ package escapeee;
 
 import EscapeeeMenuViews.MainMenuView;
 import EscapeeeMenuViews.HelpMenuView;
-import java.io.Serializable;
 import java.util.Scanner;
 
 /**
  *
  * @author zachhollingshead
  */
-public abstract class Obstacle extends ObstacleSuperClass implements Serializable
-{
-    private String ObstacleName = "Locked Door";
+public abstract class ObstacleSuperClass {
     
-    public void displayObstacleName(){
-       System.out.println("Look out for the " + this.ObstacleName);
-    }
-    
-    public void nextStep(){
-        System.out.println("\nYou have completed the previous task. The door creaks open into a dark and spooky hallway.\n"
-                + "You find yourself in another room, with another challenge.");
-    }
-    
-    @Override
      public String riddleOne() {
         String answer = null;
         boolean valid = false; // flag to indicate if valid character entered
@@ -79,7 +66,6 @@ public abstract class Obstacle extends ObstacleSuperClass implements Serializabl
         return answer;
     }
      
-    @Override
      public String riddleTwo() {
         String answer = null;
                 
@@ -136,7 +122,6 @@ public abstract class Obstacle extends ObstacleSuperClass implements Serializabl
         return answer;
     }
      
-    @Override
   public String riddleThree() {
         String answer = null;
                 
@@ -191,7 +176,6 @@ public abstract class Obstacle extends ObstacleSuperClass implements Serializabl
         return answer;
     }
     
-    @Override
      public String riddleFourPartOne() {
         String answer = null;
                 
@@ -253,7 +237,6 @@ public abstract class Obstacle extends ObstacleSuperClass implements Serializabl
         return answer;
     }
   
-    @Override
      public String riddleFourPartTwo() {
         String answer = null;
                 
@@ -311,26 +294,6 @@ public abstract class Obstacle extends ObstacleSuperClass implements Serializabl
         
         return answer;
     }
-
      
-     
-     
-     
-     
-     
-     
-     
-    public Obstacle() {
-    
-    }
-
-    public String getObstacleName() {
-        return ObstacleName;
-    }
-
-    public void setObstacleName(String ObstacleName) {
-        this.ObstacleName = ObstacleName;
-    }
-    
-}   
-
+     public abstract String executeObstacles(Game game);
+}
