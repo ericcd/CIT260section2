@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author Eric
  */
-public class HelpMenuView {
+public class HelpMenuView implements DisplayInfo{
     
     private HelpMenuControl helpMenuControl = new HelpMenuControl();
     private String command;
