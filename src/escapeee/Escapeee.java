@@ -6,6 +6,7 @@ package escapeee;
 
 //import java.util.Scanner;
 
+import EscapeeeFrames.MainMenuForm;
 import EscapeeeMenuViews.MainMenuView;
 
 
@@ -20,6 +21,8 @@ public class Escapeee {
      * line arguments
      */
     public static void main(String[] args) {
+        MainMenuForm form = new MainMenuForm();
+        form.setVisible(true);
         
         MainMenuView duts = new MainMenuView();
         duts.esc();
