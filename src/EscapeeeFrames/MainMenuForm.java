@@ -145,7 +145,7 @@ public class MainMenuForm extends javax.swing.JFrame {
     }//GEN-LAST:event_StartEscape
 
     private void QuitEscape(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuitEscape
-        
+        this.dispose();
     }//GEN-LAST:event_QuitEscape
 
     private void ExplainTheGame(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ExplainTheGame
