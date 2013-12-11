@@ -35,7 +35,7 @@ public class Item implements Serializable
             this.itemNamesArray[count] = array;
             System.out.println((count + 1) + ". " + this.itemNamesArray[count]);
         }
-        
+        /*
         //copies
         int count = 10;
         String[] subs = new String[count];
@@ -49,7 +49,7 @@ public class Item implements Serializable
         //display
         for (int x = 0; x < count; x++){
             System.out.println(subs[x]);
-        }
+        }*/
     }
     
     public String helpForLoop(int count){
