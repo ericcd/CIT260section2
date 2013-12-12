@@ -169,9 +169,9 @@ public class MainMenuForm extends javax.swing.JFrame {
     }//GEN-LAST:event_QuitEscape
 
     private void ExplainTheGame(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ExplainTheGame
-        System.out.println("\nThe goal is to escape from a house that you find yourself in. You have items to help you escape.\n"
-                 + "Enter in the correct answers to move from room to room, but be careful, there is no turning back.\n"
-                 + "There will be math problems and problems where you have to use your items.");
+        ExplainTheGameFrame explaining = new ExplainTheGameFrame();
+       explaining.run();
+       explaining.setVisible(true);
     }//GEN-LAST:event_ExplainTheGame
 
     /**
@@ -203,6 +203,7 @@ public class MainMenuForm extends javax.swing.JFrame {
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
+            @Override
             public void run() {
                 new MainMenuForm().setVisible(true);
             }
@@ -224,4 +225,12 @@ public class MainMenuForm extends javax.swing.JFrame {
     private javax.swing.JTextArea jTextArea2;
     private javax.swing.JTextPane jTextPane1;
     // End of variables declaration//GEN-END:variables
+
+    void run() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    void explain() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }
