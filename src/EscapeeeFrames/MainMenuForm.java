@@ -161,6 +161,7 @@ public class MainMenuForm extends javax.swing.JFrame {
         GameIntroFrame begin = new GameIntroFrame();
         begin.run();
         begin.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_StartEscape
 
     private void QuitEscape(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuitEscape
