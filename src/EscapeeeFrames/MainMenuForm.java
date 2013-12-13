@@ -173,7 +173,7 @@ public class MainMenuForm extends javax.swing.JFrame {
     }//GEN-LAST:event_QuitEscape
 
     private void ExplainTheGame(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ExplainTheGame
-        ExplainTheGameFrame explaining = new ExplainTheGameFrame();
+       ExplainTheGameFrame explaining = new ExplainTheGameFrame();
        explaining.run();
        explaining.setVisible(true);
        this.setVisible(false);
@@ -233,8 +233,7 @@ public class MainMenuForm extends javax.swing.JFrame {
     // End of variables declaration//GEN-END:variables
 
     void run() {
-         new MainMenuForm().setVisible(true);
+        new MainMenuForm().setVisible(true);
     }
 
-    
 }

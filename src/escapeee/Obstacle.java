@@ -313,10 +313,115 @@ public abstract class Obstacle extends ObstacleSuperClass implements Serializabl
     }
 
      
+     public String riddleFive() {
+        String answer = null;
+                
+        boolean valid = false; // flag to indicate if valid character entered
+        while (!valid) {
+            // prompt for input
+            System.out.println("\t?????????????????? Obstacle 5 ???????????????????????\n"
+                    +          "\tThere is a man in this room with his back towards you.\n"
+                    +          "\tYou see the key to get out of the room on his belt.\n"
+                    +          "\tOnly one thing you can do.\n"
+                    +           "\t?????????????????????????????????????????????????????");
+            
+            // get input from user
+            Scanner input = new Scanner(System.in);
+            answer = input.nextLine();
+           
+            // no text entered?
+            if (answer == null  || answer.length() < 1) {
+                continue;
+            }
+            
+            // Quit?
+            if (answer.equals("q")) {
+                MainMenuView main = new MainMenuView();
+                main.displayMainMenu();
+                return null;
+            }
+            
+            // Use the help menu
+            if (answer.equals("h")){
+                HelpMenuView help = new HelpMenuView();
+                help.displayHelpMenu();
+            }
+            
+            // Displays message when done with menu
+            if (answer.equals("h") || answer.equals("u") || answer.equals("q") || answer.equals("i")) {
+                System.out.println("\nBack to figuring out your problem...");
+                continue;
+            }
+            
+            
+            // Check to see if the answer is correct
+            if (!answer.equals("7")) {
+               System.out.println("\n\"Not this item, find another!\"\n");
+               continue;
+            }
+            
+            System.out.println("\nYou use the chainsaw to cut of his belt.\n"
+                    + " Before he notices anything you run out the door and lock it behind you.\n");         
+            valid = true; // signal that a valid marker was entered
+        }
+        
+        return answer;
+    }
      
      
-     
-     
+     public String riddleFinal() {
+        String answer = null;
+                
+        boolean valid = false; // flag to indicate if valid character entered
+        while (!valid) {
+            // prompt for input
+            System.out.println("\t?????????????????? Obstacle 5 ???????????????????????\n"
+                    +          "\tThere is a man in this room with his back towards you.\n"
+                    +          "\tYou see the key to get out of the room on his belt.\n"
+                    +          "\tOnly one thing you can do.\n"
+                    +           "\t?????????????????????????????????????????????????????");
+            
+            // get input from user
+            Scanner input = new Scanner(System.in);
+            answer = input.nextLine();
+           
+            // no text entered?
+            if (answer == null  || answer.length() < 1) {
+                continue;
+            }
+            
+            // Quit?
+            if (answer.equals("q")) {
+                MainMenuView main = new MainMenuView();
+                main.displayMainMenu();
+                return null;
+            }
+            
+            // Use the help menu
+            if (answer.equals("h")){
+                HelpMenuView help = new HelpMenuView();
+                help.displayHelpMenu();
+            }
+            
+            // Displays message when done with menu
+            if (answer.equals("h") || answer.equals("u") || answer.equals("q") || answer.equals("i")) {
+                System.out.println("\nBack to figuring out your problem...");
+                continue;
+            }
+            
+            
+            // Check to see if the answer is correct
+            if (!answer.equals("7")) {
+               System.out.println("\n\"Not this item, find another!\"\n");
+               continue;
+            }
+            
+            System.out.println("\n\n");         
+            valid = true; // signal that a valid marker was entered
+        }
+        
+        return answer;
+    }
      
      
      
