@@ -169,7 +169,7 @@ public class MainMenuForm extends javax.swing.JFrame {
     }//GEN-LAST:event_QuitEscape
 
     private void ExplainTheGame(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ExplainTheGame
-        ExplainTheGameFrame explaining = new ExplainTheGameFrame();
+       ExplainTheGameFrame explaining = new ExplainTheGameFrame();
        explaining.run();
        explaining.setVisible(true);
        this.setVisible(false);
@@ -228,10 +228,7 @@ public class MainMenuForm extends javax.swing.JFrame {
     // End of variables declaration//GEN-END:variables
 
     void run() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        new MainMenuForm().setVisible(true);
     }
 
-    void explain() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
 }
