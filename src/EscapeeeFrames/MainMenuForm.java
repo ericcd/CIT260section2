@@ -172,6 +172,7 @@ public class MainMenuForm extends javax.swing.JFrame {
         ExplainTheGameFrame explaining = new ExplainTheGameFrame();
        explaining.run();
        explaining.setVisible(true);
+       this.setVisible(false);
     }//GEN-LAST:event_ExplainTheGame
 
     /**
