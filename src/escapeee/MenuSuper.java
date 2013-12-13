@@ -4,6 +4,7 @@
  */
 package escapeee;
 
+import EscapeeeMenuControls.MainMenuControl;
 import java.util.Scanner;
 
 /**
