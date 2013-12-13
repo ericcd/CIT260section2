@@ -82,10 +82,10 @@ public class ExplainTheGameFrame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void ReturnToMainMenu(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ReturnToMainMenu
-        MainMenuForm begin = new MainMenuForm();
-        begin.run();
-        begin.setVisible(true);
-        this.setVisible(false);       
+        MainMenuForm again = new MainMenuForm();
+        again.run();
+        again.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_ReturnToMainMenu
 
     /**

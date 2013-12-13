@@ -13,6 +13,7 @@ import escapeee.Game;
  */
 public class MainMenuForm extends javax.swing.JFrame {
 
+
     /**
      * Creates new form MainMenuForm
      */
@@ -173,6 +174,7 @@ public class MainMenuForm extends javax.swing.JFrame {
        explaining.run();
        explaining.setVisible(true);
        this.setVisible(false);
+       this.dispose();
     }//GEN-LAST:event_ExplainTheGame
 
     /**
@@ -203,12 +205,12 @@ public class MainMenuForm extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
+       /* java.awt.EventQueue.invokeLater(new Runnable() {
             @Override
             public void run() {
                 new MainMenuForm().setVisible(true);
             }
-        });
+        });*/
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
@@ -228,10 +230,8 @@ public class MainMenuForm extends javax.swing.JFrame {
     // End of variables declaration//GEN-END:variables
 
     void run() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+         new MainMenuForm().setVisible(true);
     }
 
-    void explain() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    
 }

@@ -83,14 +83,10 @@ public class GameIntroFrame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void BeginTheGame(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BeginTheGame
-        Obstacle challenge = new Obstacle() {
-
-            @Override
-            public String executeObstacles(Game game) {
-                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-            }
-        };
-        challenge.riddleOne();
+        Obstacle1 start = new Obstacle1();
+        start.run();
+        start.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_BeginTheGame
 
     /**
@@ -123,7 +119,7 @@ public class GameIntroFrame extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new GameIntroFrame().setVisible(true);
+                new Obstacle1().setVisible(true);
             }
         });
     }

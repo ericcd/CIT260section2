@@ -141,7 +141,7 @@ public class Obstacle1 extends javax.swing.JFrame {
                continue;
             }
             
-            System.out.println("\nThat is correct.\n");         
+            jTextArea1.setText("That is correct");         
             valid = true; // signal that a valid marker was entered
      
    
@@ -189,4 +189,8 @@ public class Obstacle1 extends javax.swing.JFrame {
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextField jTextField2;
     // End of variables declaration//GEN-END:variables
+
+    void run() {
+        new Obstacle1().setVisible(true);
+    }
 }
