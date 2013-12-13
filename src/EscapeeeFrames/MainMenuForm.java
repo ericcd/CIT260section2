@@ -13,6 +13,9 @@ import escapeee.Game;
  */
 public class MainMenuForm extends javax.swing.JFrame {
 
+    static void DISPOSE_ON_CLOSE() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 
     /**
      * Creates new form MainMenuForm
@@ -205,12 +208,12 @@ public class MainMenuForm extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-       /* java.awt.EventQueue.invokeLater(new Runnable() {
+        java.awt.EventQueue.invokeLater(new Runnable() {
             @Override
             public void run() {
                 new MainMenuForm().setVisible(true);
             }
-        });*/
+        });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
